@@ -20,10 +20,26 @@ public class Carta {
         return emparejada;
     }
 
-    public Carta(boolean estado, int nombre, boolean emparejada) {
+    public void setEstado(boolean estado) {
         this.estado = estado;
+    }
+
+    public void setNombre(int nombre) {
         this.nombre = nombre;
+    }
+
+    public void setEmparejada(boolean emparejada) {
         this.emparejada = emparejada;
+    }
+    
+    public void setVisible(boolean estado){
+    }
+    
+
+    public Carta(int nombre) {
+        this.nombre = nombre;
+        this.estado = false;
+        this.emparejada = false;
     }
     
 }
