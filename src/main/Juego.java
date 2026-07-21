@@ -8,7 +8,7 @@ package main;
  *
  * @author bryan
  */
-public class Main {
+public class Juego {
 
     /**
      * @param args the command line arguments
