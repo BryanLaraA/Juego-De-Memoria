@@ -5,14 +5,14 @@ package cartas;
 public class Carta {
     
     private boolean estado;
-    private String nombre;
+    private int nombre;
     private boolean emparejada;
 
     public boolean isEstado() {
         return estado;
     }
 
-    public String getNombre() {
+    public int getNombre() {
         return nombre;
     }
 
@@ -20,7 +20,7 @@ public class Carta {
         return emparejada;
     }
 
-    public Carta(boolean estado, String nombre, boolean emparejada) {
+    public Carta(boolean estado, int nombre, boolean emparejada) {
         this.estado = estado;
         this.nombre = nombre;
         this.emparejada = emparejada;
