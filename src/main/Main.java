@@ -12,7 +12,6 @@ import javax.swing.JFrame;
  */
 public class Main {
         public static void main(String[] args) {
-            Juego juego = new Juego();
             JFrame ventana = new JFrame();
             ventana.setVisible(true);
     }
