@@ -8,6 +8,7 @@ public class Jugador {
   private int score; 
   private int attempts;
   private int parejasEncontradas;
+  private int contScore;
 
     public int getScore() {
         return score;
@@ -30,29 +31,18 @@ public class Jugador {
     }
 
     
-    public boolean incrementScore(){
-        int contScore = 0;
-     if (parejasEncontradas ==1) {
-        contScore++;
-        return true;
-    } else {
-        return false;
+    public void incrementScore(){
+        score += 100;
     }
+      
+    public void incrementparejas(){
+        parejasEncontradas ++;
     }
-            
-//    public void contAttempts(){
-//    int contattempts = 0; 
-//    if (carta1.getNombre().equals(carta2.getNombre())) {
-//    contattempts++;
-//    }
-//    }           
     
-//    public void contAttempts(){
-//    int contParejasEncontradas = 0; 
-//    if (carta1.getNombre().equals(carta2.getNombre())) {
-//    contParejasEncontradas++;
-//    }
-//    }   
+    public void LowerScore(){
+        score -=20;
+    }
+    
     
     public Jugador(int score, int attempts, int parejasEncontradas) {
         this.score = score;
