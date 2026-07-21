@@ -43,6 +43,9 @@ public class Jugador {
         score -=20;
     }
     
+    public void incrementAttempts(){
+        attempts ++;
+    }
     
     public Jugador(int score, int attempts, int parejasEncontradas) {
         this.score = score;
