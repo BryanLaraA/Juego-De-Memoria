@@ -88,8 +88,8 @@ public class Juego {
 
         System.out.println("Puntaje: " + jugador.getScore());
         System.out.println("Intentos: " + jugador.getAttempts());
-        System.out.println("Parejas encontradas: "
-                + jugador.getParejasEncontradas());
+        System.out.println("Parejas encontradas: " + 
+                jugador.getParejasEncontradas());
     }
 
     public void cambiarNivel(Nivel nivel) {
