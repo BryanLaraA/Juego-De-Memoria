@@ -35,7 +35,6 @@ public class Carta {
     public void setVisible(boolean estado){
     }
     
-
     public Carta(int nombre) {
         this.nombre = nombre;
         this.estado = false;
