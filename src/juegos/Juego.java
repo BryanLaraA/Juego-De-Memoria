@@ -1,4 +1,4 @@
-package main;
+package juegos;
 
 import cartas.Carta;
 import jugadores.Jugador;
@@ -26,7 +26,7 @@ public class Juego {
     public void nuevaPartida() {
 
         tablero = new Tablero(nivel);
-        jugador = new Jugador();
+        jugador = new Jugador(0,0,0);
 
         primeraCarta = null;
         segundaCarta = null;
@@ -63,7 +63,7 @@ public class Juego {
             primeraCarta.setEmparejada(true);
             segundaCarta.setEmparejada(true);
 
-            jugador.incrementParejasEncontradas();
+            jugador.incrementparejas();
             jugador.incrementScore();
 
         } else {
@@ -71,7 +71,7 @@ public class Juego {
             primeraCarta.setVisible(false);
             segundaCarta.setVisible(false);
 
-            jugador.lowScore();
+            jugador.LowerScore();
         }
 
         primeraCarta = null;
