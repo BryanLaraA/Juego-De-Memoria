@@ -4,17 +4,18 @@
  */
 package main;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author bryan
  */
-public class Juego {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+public class Main {
+        public static void main(String[] args) {
+            Juego juego = new Juego();
+            JFrame ventana = new JFrame();
+            ventana.setVisible(true);
     }
-    
 }
+
+
