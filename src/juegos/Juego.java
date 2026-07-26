@@ -1,4 +1,4 @@
-package main;
+package juegos;
 
 import cartas.Carta;
 import jugadores.Jugador;
@@ -17,63 +17,46 @@ public class Juego {
     public Juego(Nivel nivel) {
         this.nivel = nivel;
         this.tablero = new Tablero(nivel);
-        this.jugador = new Jugador(0,0,0);
+        this.jugador = new Jugador();
 
         primeraCarta = null;
         segundaCarta = null;
     }
 
     public void nuevaPartida() {
-
         tablero = new Tablero(nivel);
         jugador = new Jugador();
-
         primeraCarta = null;
         segundaCarta = null;
     }
 
     public void seleccionarCarta(int fila, int columna) {
-
         Carta carta = tablero.obtenerCarta(fila, columna);
-
         if (carta.isEmparejada()|| carta.isEstado()) {
             return;
         }
-
         carta.setVisible(true);
 
         if (primeraCarta == null) {
-
             primeraCarta = carta;
-
         } else {
-
             segundaCarta = carta;
-
             verificarPareja();
         }
     }
 
     private void verificarPareja() {
-
         jugador.incrementAttempts();
-
         if (primeraCarta.getNombre()==segundaCarta.getNombre()) {
-
             primeraCarta.setEmparejada(true);
             segundaCarta.setEmparejada(true);
-
-            jugador.incrementParejasEncontradas();
+            jugador.incrementparejas();
             jugador.incrementScore();
-
         } else {
-
             primeraCarta.setVisible(false);
             segundaCarta.setVisible(false);
-
-            jugador.lowScore();
+            jugador.LowerScore();
         }
-
         primeraCarta = null;
         segundaCarta = null;
 
@@ -83,17 +66,14 @@ public class Juego {
     }
 
     public void finalizarJuego() {
-
         System.out.println("Juego finalizado");
-
         System.out.println("Puntaje: " + jugador.getScore());
         System.out.println("Intentos: " + jugador.getAttempts());
         System.out.println("Parejas encontradas: " + 
-                jugador.getParejasEncontradas());
+        jugador.getParejasEncontradas());
     }
 
     public void cambiarNivel(Nivel nivel) {
-
         this.nivel = nivel;
         nuevaPartida();
     }
