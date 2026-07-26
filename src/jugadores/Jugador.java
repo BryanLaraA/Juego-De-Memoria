@@ -8,7 +8,6 @@ public class Jugador {
   private int score; 
   private int attempts;
   private int parejasEncontradas;
-  private int contScore;
 
     public int getScore() {
         return score;
@@ -47,10 +46,10 @@ public class Jugador {
         attempts ++;
     }
     
-    public Jugador(int score, int attempts, int parejasEncontradas) {
-        this.score = score;
-        this.attempts = attempts;
-        this.parejasEncontradas = parejasEncontradas;
+    public Jugador() {
+        this.score = 0;
+        this.attempts = 0;
+        this.parejasEncontradas = 0;
     }
   
   
