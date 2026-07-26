@@ -1,24 +1,24 @@
 
 package tableros;
 import cartas.Carta;
-import java.util.Random;
+import niveles.Nivel;
 
 public class Tablero {
     private Carta[][] tablero;
     private int filas;
     private int columnas;
 
-    public Tablero(int nivel) {
+    public Tablero(Nivel nivel) {
         switch (nivel){
-            case 1: 
+            case PRINCIPIANTE: 
                 filas = 4;
                 columnas = 4;
                 break;
-            case 2: 
+            case INTERMEDIO: 
                 filas = 8;
                 columnas = 8;
                 break;    
-            case 3: 
+            case AVANZADO: 
                 filas = 16;
                 columnas = 16;
                 break;    
@@ -46,14 +46,13 @@ public class Tablero {
     }
     
     private void colocarCarta(Carta carta) {
-    boolean colocada = false;
-    while (!colocada) {
-        Random random = new Random();
-        int fila = random.nextInt(filas);
-        int columna = random.nextInt(columnas);
-        if (tablero[fila][columna] == null) {
-            tablero[fila][columna] = carta;
-            colocada = true;
+     boolean colocada = false;
+        while (!colocada) {
+            int fila = (int) (Math.random() * filas);
+            int columna = (int) (Math.random() * columnas);
+            if (tablero[fila][columna] == null) {
+                tablero[fila][columna] = carta;
+                colocada = true;
             }
         }
     }
