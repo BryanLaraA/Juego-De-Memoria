@@ -4,6 +4,11 @@
  */
 package interfaz;
 
+import java.awt.BorderLayout;
+import java.awt.Component;
+import juegos.Juego;
+import niveles.Nivel;
+
 /**
  *
  * @author andre
@@ -11,12 +16,36 @@ package interfaz;
 public class frmJuego extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frmJuego.class.getName());
-
+    private Juego juego;
+   
     /**
      * Creates new form frmJuego
      */
-    public frmJuego() {
+    public frmJuego(Nivel nivel) {
         initComponents();
+        juego = new Juego(nivel);
+        switch(nivel.getParejas()){
+            case 8 ->{
+                jpnFacil Facil=new jpnFacil();
+                Facil.setSize(590,510);
+                Facil.setLocation(0,0);
+                mostrarJuego(Facil);
+            }
+            case 16 ->{
+                //mostrar jpnDificil
+            }
+            case 32 ->{
+                
+            }
+        }
+        jpnFacil Facil = new jpnFacil();
+        
+    }
+    private void mostrarJuego(Component nivel){
+        jpnPantalla.removeAll();
+        jpnPantalla.add(nivel,BorderLayout.CENTER);
+        jpnPantalla.revalidate();
+        jpnPantalla.repaint();
     }
 
     /**
@@ -32,9 +61,9 @@ public class frmJuego extends javax.swing.JFrame {
         jpnInfo = new javax.swing.JPanel();
         lblTimer = new javax.swing.JLabel();
         btnMenu = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        btnReiniciar = new javax.swing.JButton();
         lblScore = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        lblIntentos = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -45,7 +74,7 @@ public class frmJuego extends javax.swing.JFrame {
         jpnPantalla.setLayout(jpnPantallaLayout);
         jpnPantallaLayout.setHorizontalGroup(
             jpnPantallaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 938, Short.MAX_VALUE)
+            .addGap(0, 508, Short.MAX_VALUE)
         );
         jpnPantallaLayout.setVerticalGroup(
             jpnPantallaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -61,12 +90,12 @@ public class frmJuego extends javax.swing.JFrame {
         btnMenu.setText("Menu");
         btnMenu.addActionListener(this::btnMenuActionPerformed);
 
-        jButton1.setText("Reiniciar");
-        jButton1.addActionListener(this::jButton1ActionPerformed);
+        btnReiniciar.setText("Reiniciar");
+        btnReiniciar.addActionListener(this::btnReiniciarActionPerformed);
 
         lblScore.setText("lblScore");
 
-        jLabel1.setText("lblIntentos");
+        lblIntentos.setText("lblIntentos");
 
         javax.swing.GroupLayout jpnInfoLayout = new javax.swing.GroupLayout(jpnInfo);
         jpnInfo.setLayout(jpnInfoLayout);
@@ -76,11 +105,11 @@ public class frmJuego extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(btnMenu)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 617, Short.MAX_VALUE)
+                .addComponent(btnReiniciar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 187, Short.MAX_VALUE)
                 .addComponent(lblScore)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1)
+                .addComponent(lblIntentos)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblTimer)
                 .addContainerGap())
@@ -92,13 +121,13 @@ public class frmJuego extends javax.swing.JFrame {
                 .addGroup(jpnInfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblTimer)
                     .addComponent(btnMenu)
-                    .addComponent(jButton1)
+                    .addComponent(btnReiniciar)
                     .addComponent(lblScore)
-                    .addComponent(jLabel1))
+                    .addComponent(lblIntentos))
                 .addContainerGap(9, Short.MAX_VALUE))
         );
 
-        getContentPane().add(jpnInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 590, 940, 40));
+        getContentPane().add(jpnInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 590, 510, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -107,9 +136,9 @@ public class frmJuego extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnMenuActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReiniciarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnReiniciarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -131,17 +160,18 @@ public class frmJuego extends javax.swing.JFrame {
             logger.log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        Nivel nivel;
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new frmJuego().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new frmJuego(null).setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnMenu;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton btnReiniciar;
     private javax.swing.JPanel jpnInfo;
     private javax.swing.JPanel jpnPantalla;
+    private javax.swing.JLabel lblIntentos;
     private javax.swing.JLabel lblScore;
     private javax.swing.JLabel lblTimer;
     // End of variables declaration//GEN-END:variables

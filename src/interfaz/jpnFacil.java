@@ -36,13 +36,13 @@ public class jpnFacil extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnf1c4.addActionListener(this::btnf1c4ActionPerformed);
-        add(btnf1c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, 40, 50));
+        add(btnf1c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 150, 40, 50));
 
         btnf4c4.addActionListener(this::btnf4c4ActionPerformed);
-        add(btnf4c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 270, 50, 70));
+        add(btnf4c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 160, 50, 70));
 
         btnf1c5.addActionListener(this::btnf1c5ActionPerformed);
-        add(btnf1c5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 40, 50));
+        add(btnf1c5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, 40, 50));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnf1c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c4ActionPerformed

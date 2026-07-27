@@ -4,6 +4,8 @@
  */
 package interfaz;
 
+import niveles.Nivel;
+
 /**
  *
  * @author andre
@@ -11,13 +13,12 @@ package interfaz;
 public class frmMenu extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frmMenu.class.getName());
-        private frmJuego juego;
     /**
      * Creates new form frmMenu
      */
     public frmMenu() {
         initComponents();
-        juego = new frmJuego();
+        
     }
 
     /**
@@ -29,71 +30,77 @@ public class frmMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnPrincipiante = new javax.swing.JButton();
-        btnIntermedio = new javax.swing.JButton();
-        btnAvanzado = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        txtNivel = new javax.swing.JComboBox<>();
         lblDificultad = new javax.swing.JLabel();
+        btnIniciar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnPrincipiante.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        btnPrincipiante.setText("Principiante");
-        btnPrincipiante.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        btnPrincipiante.addActionListener(this::btnPrincipianteActionPerformed);
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        btnIntermedio.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        btnIntermedio.setText("Intermedio");
-        btnIntermedio.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        txtNivel.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        txtNivel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Principiante", "Intermedio", "Avanzado", " " }));
 
-        btnAvanzado.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        btnAvanzado.setText("Avanzado");
-        btnAvanzado.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        btnAvanzado.addActionListener(this::btnAvanzadoActionPerformed);
-
-        lblDificultad.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        lblDificultad.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         lblDificultad.setText("Dificultad");
         lblDificultad.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(356, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnAvanzado, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnIntermedio, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnPrincipiante, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(356, 356, 356))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(418, 418, 418)
+        btnIniciar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        btnIniciar.setText("Iniciar Juego");
+        btnIniciar.addActionListener(this::btnIniciarActionPerformed);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(178, 178, 178)
                 .addComponent(lblDificultad)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(178, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(txtNivel, 0, 227, Short.MAX_VALUE)
+                    .addComponent(btnIniciar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(139, 139, 139))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(220, 220, 220)
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(144, 144, 144)
                 .addComponent(lblDificultad)
                 .addGap(18, 18, 18)
-                .addComponent(btnPrincipiante)
-                .addGap(18, 18, 18)
-                .addComponent(btnIntermedio)
-                .addGap(18, 18, 18)
-                .addComponent(btnAvanzado)
-                .addContainerGap(222, Short.MAX_VALUE))
+                .addComponent(txtNivel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(60, 60, 60)
+                .addComponent(btnIniciar)
+                .addContainerGap(288, Short.MAX_VALUE))
         );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 510, 630));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnPrincipianteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrincipianteActionPerformed
-        juego.
-    }//GEN-LAST:event_btnPrincipianteActionPerformed
-
-    private void btnAvanzadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAvanzadoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAvanzadoActionPerformed
+    private void btnIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarActionPerformed
+        int opc = txtNivel.getSelectedIndex();
+        Nivel nivel = null;
+        switch(opc){
+            case 0 -> {
+                nivel= nivel.PRINCIPIANTE;
+            }
+            case 1 ->{
+                nivel= nivel.INTERMEDIO;
+            }
+            case 2 ->{
+                nivel = nivel.AVANZADO;
+            }
+        }
+        frmJuego juego = new frmJuego(nivel);
+        juego.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnIniciarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -121,9 +128,9 @@ public class frmMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnAvanzado;
-    private javax.swing.JButton btnIntermedio;
-    private javax.swing.JButton btnPrincipiante;
+    private javax.swing.JButton btnIniciar;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblDificultad;
+    private javax.swing.JComboBox<String> txtNivel;
     // End of variables declaration//GEN-END:variables
 }
