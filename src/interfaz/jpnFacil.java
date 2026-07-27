@@ -4,19 +4,41 @@
  */
 package interfaz;
 
+import javax.swing.JButton;
+
 /**
  *
  * @author andre
  */
 public class jpnFacil extends javax.swing.JPanel {
 
+     JButton[][] bototnes = new JButton [4][4];
     /**
      * Creates new form jpnFacil
      */
     
     public jpnFacil() {
         initComponents();
-                
+        JButton[][] botones = null;
+    botones[0][0] = btnf1c1;
+    botones[0][1] = btnf1c2;
+    botones[0][2] = btnf1c3;
+    botones[0][3] = btnf1c4;
+
+    botones[1][0] = btnf2c1;
+    botones[1][1] = btnf2c2;
+    botones[1][2] = btnf2c3;
+    botones[1][3] = btnf2c4;
+
+    botones[2][0] = btnf3c1;
+    botones[2][1] = btnf3c2;
+    botones[2][2] = btnf3c3;
+    botones[2][3] = btnf3c4;
+
+    botones[3][0] = btnf4c1;
+    botones[3][1] = btnf4c2;
+    botones[3][2] = btnf4c3;
+    botones[3][3] = btnf4c4;     
     }
 
     /**
@@ -28,39 +50,216 @@ public class jpnFacil extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnf1c1 = new javax.swing.JButton();
+        btnf1c2 = new javax.swing.JButton();
+        btnf1c3 = new javax.swing.JButton();
         btnf1c4 = new javax.swing.JButton();
+        btnf2c1 = new javax.swing.JButton();
+        btnf2c2 = new javax.swing.JButton();
+        btnf2c3 = new javax.swing.JButton();
+        btnf2c4 = new javax.swing.JButton();
+        btnf3c1 = new javax.swing.JButton();
+        btnf3c2 = new javax.swing.JButton();
+        btnf3c3 = new javax.swing.JButton();
+        btnf3c4 = new javax.swing.JButton();
+        btnf4c1 = new javax.swing.JButton();
+        btnf4c2 = new javax.swing.JButton();
+        btnf4c3 = new javax.swing.JButton();
         btnf4c4 = new javax.swing.JButton();
-        btnf1c5 = new javax.swing.JButton();
 
-        setPreferredSize(new java.awt.Dimension(900, 400));
-        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setPreferredSize(new java.awt.Dimension(510, 590));
+
+        btnf1c1.addActionListener(this::btnf1c1ActionPerformed);
+
+        btnf1c2.addActionListener(this::btnf1c2ActionPerformed);
+
+        btnf1c3.addActionListener(this::btnf1c3ActionPerformed);
 
         btnf1c4.addActionListener(this::btnf1c4ActionPerformed);
-        add(btnf1c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, 40, 50));
+
+        btnf2c1.addActionListener(this::btnf2c1ActionPerformed);
+
+        btnf2c2.addActionListener(this::btnf2c2ActionPerformed);
+
+        btnf2c3.addActionListener(this::btnf2c3ActionPerformed);
+
+        btnf2c4.addActionListener(this::btnf2c4ActionPerformed);
+
+        btnf3c1.addActionListener(this::btnf3c1ActionPerformed);
+
+        btnf3c2.addActionListener(this::btnf3c2ActionPerformed);
+
+        btnf3c3.addActionListener(this::btnf3c3ActionPerformed);
+
+        btnf3c4.addActionListener(this::btnf3c4ActionPerformed);
+
+        btnf4c1.addActionListener(this::btnf4c1ActionPerformed);
+
+        btnf4c2.addActionListener(this::btnf4c2ActionPerformed);
+
+        btnf4c3.addActionListener(this::btnf4c3ActionPerformed);
 
         btnf4c4.addActionListener(this::btnf4c4ActionPerformed);
-        add(btnf4c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 270, 50, 70));
 
-        btnf1c5.addActionListener(this::btnf1c5ActionPerformed);
-        add(btnf1c5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 40, 50));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(33, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnf1c1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(btnf1c2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(btnf1c3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(btnf1c4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnf2c1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(btnf2c2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(btnf2c3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(btnf2c4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnf3c1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(btnf3c2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(btnf3c3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(btnf3c4, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnf4c1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(btnf4c2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(btnf4c3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnf4c4, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(29, 29, 29))
+        );
+
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnf1c1, btnf1c2, btnf1c3, btnf1c4, btnf2c1, btnf2c2, btnf2c3, btnf2c4, btnf3c1, btnf3c2, btnf3c3, btnf3c4, btnf4c1, btnf4c2, btnf4c3, btnf4c4});
+
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnf1c1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnf1c2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnf1c3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnf1c4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnf2c1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnf2c2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnf2c3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnf2c4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnf3c1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnf3c2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnf3c3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnf3c4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnf4c1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnf4c2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnf4c3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnf4c4, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnf1c1, btnf1c2, btnf1c3, btnf1c4, btnf2c1, btnf2c2, btnf2c3, btnf2c4, btnf3c1, btnf3c2, btnf3c3, btnf3c4, btnf4c1, btnf4c2, btnf4c3, btnf4c4});
+
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnf2c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnf2c1ActionPerformed
+
+    private void btnf1c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnf1c1ActionPerformed
+
+    private void btnf2c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnf2c3ActionPerformed
+
+    private void btnf1c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnf1c3ActionPerformed
+
+    private void btnf1c8Abtnf1c1rformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnf1c8ActionPerformed
+
+    private void btnf2c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnf2c2ActionPerformed
+
+    private void btnf4c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnf4c1ActionPerformed
+
+    private void btnf3c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnf3c1ActionPerformed
+
+    private void btnf4c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnf4c3ActionPerformed
+
+    private void btnf3c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnf3c3ActionPerformed
+
+    private void btnf3c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnf3c2ActionPerformed
+
+    private void btnf4c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnf4c2ActionPerformed
+
+    private void btnf2c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnf2c4ActionPerformed
 
     private void btnf1c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnf1c4ActionPerformed
 
-    private void btnf1c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnf1c5ActionPerformed
-
     private void btnf4c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnf4c4ActionPerformed
 
+    private void btnf3c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnf3c4ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnf1c1;
+    private javax.swing.JButton btnf1c2;
+    private javax.swing.JButton btnf1c3;
     private javax.swing.JButton btnf1c4;
-    private javax.swing.JButton btnf1c5;
+    private javax.swing.JButton btnf2c1;
+    private javax.swing.JButton btnf2c2;
+    private javax.swing.JButton btnf2c3;
+    private javax.swing.JButton btnf2c4;
+    private javax.swing.JButton btnf3c1;
+    private javax.swing.JButton btnf3c2;
+    private javax.swing.JButton btnf3c3;
+    private javax.swing.JButton btnf3c4;
+    private javax.swing.JButton btnf4c1;
+    private javax.swing.JButton btnf4c2;
+    private javax.swing.JButton btnf4c3;
     private javax.swing.JButton btnf4c4;
     // End of variables declaration//GEN-END:variables
 }
