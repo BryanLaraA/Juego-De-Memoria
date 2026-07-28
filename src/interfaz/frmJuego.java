@@ -8,42 +8,59 @@ import java.awt.BorderLayout;
 import java.awt.Component;
 import juegos.Juego;
 import niveles.Nivel;
+import cronometros.Cronometro;
+import javax.swing.Timer;
 
 /**
  *
  * @author andre
  */
 public class frmJuego extends javax.swing.JFrame {
-    
+
+    private Cronometro cronometro;
+    private Timer actualizar;
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frmJuego.class.getName());
     private Juego juego;
-   
+
     /**
      * Creates new form frmJuego
      */
     public frmJuego(Nivel nivel) {
         initComponents();
+
+        jpnPantalla.setLayout(new BorderLayout());
+
+        cronometro = new Cronometro();
+
+        actualizar = new Timer(1000, e -> {
+            lblTimer.setText(cronometro.getTiempo_reiniciado());
+        });
+
+        lblTimer.setText("0:00");
+
         juego = new Juego(nivel);
-        switch(nivel.getParejas()){
-            case 8 ->{
-                jpnFacil Facil=new jpnFacil();
-                Facil.setSize(590,510);
-                Facil.setLocation(0,0);
+        switch (nivel.getParejas()) {
+            case 8 -> {
+                jpnFacil Facil = new jpnFacil();
+                Facil.setSize(590, 510);
+                Facil.setLocation(0, 0);
                 mostrarJuego(Facil);
             }
-            case 16 ->{
+            case 16 -> {
                 //mostrar jpnDificil
             }
-            case 32 ->{
-                
+            case 32 -> {
+
             }
         }
         jpnFacil Facil = new jpnFacil();
-        
+
     }
-    private void mostrarJuego(Component nivel){
+
+    private void mostrarJuego(Component nivel) {
         jpnPantalla.removeAll();
-        jpnPantalla.add(nivel,BorderLayout.CENTER);
+        jpnPantalla.add(nivel, BorderLayout.CENTER);
         jpnPantalla.revalidate();
         jpnPantalla.repaint();
     }
@@ -58,27 +75,38 @@ public class frmJuego extends javax.swing.JFrame {
     private void initComponents() {
 
         jpnPantalla = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
         jpnInfo = new javax.swing.JPanel();
         lblTimer = new javax.swing.JLabel();
         btnMenu = new javax.swing.JButton();
         btnReiniciar = new javax.swing.JButton();
         lblScore = new javax.swing.JLabel();
         lblIntentos = new javax.swing.JLabel();
+        btnIniciar = new javax.swing.JButton();
+        btnDetener = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jpnPantalla.setBorder(new javax.swing.border.MatteBorder(null));
 
+        jLabel1.setText("jLabel1");
+
         javax.swing.GroupLayout jpnPantallaLayout = new javax.swing.GroupLayout(jpnPantalla);
         jpnPantalla.setLayout(jpnPantallaLayout);
         jpnPantallaLayout.setHorizontalGroup(
             jpnPantallaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 508, Short.MAX_VALUE)
+            .addGroup(jpnPantallaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addContainerGap(465, Short.MAX_VALUE))
         );
         jpnPantallaLayout.setVerticalGroup(
             jpnPantallaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 588, Short.MAX_VALUE)
+            .addGroup(jpnPantallaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addContainerGap(566, Short.MAX_VALUE))
         );
 
         getContentPane().add(jpnPantalla, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -97,6 +125,12 @@ public class frmJuego extends javax.swing.JFrame {
 
         lblIntentos.setText("lblIntentos");
 
+        btnIniciar.setText("Iniciar");
+        btnIniciar.addActionListener(this::btnIniciarActionPerformed);
+
+        btnDetener.setText("Detener");
+        btnDetener.addActionListener(this::btnDetenerActionPerformed);
+
         javax.swing.GroupLayout jpnInfoLayout = new javax.swing.GroupLayout(jpnInfo);
         jpnInfo.setLayout(jpnInfoLayout);
         jpnInfoLayout.setHorizontalGroup(
@@ -105,8 +139,12 @@ public class frmJuego extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(btnMenu)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnIniciar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnDetener)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnReiniciar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 187, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
                 .addComponent(lblScore)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblIntentos)
@@ -123,7 +161,9 @@ public class frmJuego extends javax.swing.JFrame {
                     .addComponent(btnMenu)
                     .addComponent(btnReiniciar)
                     .addComponent(lblScore)
-                    .addComponent(lblIntentos))
+                    .addComponent(lblIntentos)
+                    .addComponent(btnIniciar)
+                    .addComponent(btnDetener))
                 .addContainerGap(9, Short.MAX_VALUE))
         );
 
@@ -137,8 +177,20 @@ public class frmJuego extends javax.swing.JFrame {
     }//GEN-LAST:event_btnMenuActionPerformed
 
     private void btnReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReiniciarActionPerformed
-        // TODO add your handling code here:
+        cronometro.reiniciar();
+        lblTimer.setText("0:00");
+        actualizar.stop();
     }//GEN-LAST:event_btnReiniciarActionPerformed
+
+    private void btnIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarActionPerformed
+        cronometro.iniciar();
+        actualizar.start();
+    }//GEN-LAST:event_btnIniciarActionPerformed
+
+    private void btnDetenerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDetenerActionPerformed
+        cronometro.detener();
+        actualizar.stop();
+    }//GEN-LAST:event_btnDetenerActionPerformed
 
     /**
      * @param args the command line arguments
@@ -167,8 +219,11 @@ public class frmJuego extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnDetener;
+    private javax.swing.JButton btnIniciar;
     private javax.swing.JButton btnMenu;
     private javax.swing.JButton btnReiniciar;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jpnInfo;
     private javax.swing.JPanel jpnPantalla;
     private javax.swing.JLabel lblIntentos;
