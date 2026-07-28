@@ -5,7 +5,6 @@
 package interfaz;
 
 import java.awt.BorderLayout;
-import java.awt.Component;
 import javax.swing.JPanel;
 import juegos.Juego;
 import niveles.Nivel;
@@ -23,14 +22,9 @@ public class frmJuego extends javax.swing.JFrame {
 
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frmJuego.class.getName());
     private Juego juego;
-<<<<<<< Updated upstream
-
-=======
     private Nivel nivelActual;
-   
->>>>>>> Stashed changes
-    /**
-     * Creates new form frmJuego
+
+     /* Creates new form frmJuego
      * @param nivel
      */
     public frmJuego(Nivel nivel) {
@@ -47,7 +41,7 @@ public class frmJuego extends javax.swing.JFrame {
         lblTimer.setText("0:00");
 
         juego = new Juego(nivel);
-<<<<<<< Updated upstream
+        this.nivelActual=nivel;
         switch (nivel.getParejas()) {
             case 8 -> {
                 jpnFacil Facil = new jpnFacil();
@@ -66,13 +60,12 @@ public class frmJuego extends javax.swing.JFrame {
 
     }
 
-    private void mostrarJuego(Component nivel) {
+    private void mostrarJuego(JPanel panel) {
         jpnPantalla.removeAll();
-        jpnPantalla.add(nivel, BorderLayout.CENTER);
-=======
-        this.nivelActual=nivel;
-        this.setTitle("Juego de memoria - "+nivel);
-        switch(nivel.getParejas()){
+        jpnPantalla.add(panel, BorderLayout.CENTER);
+        
+        this.setTitle("Juego de memoria - "+nivelActual);
+        switch(nivelActual.getParejas()){
             case 8 ->{
                 jpnFacil Facil=new jpnFacil();
                 
@@ -90,14 +83,6 @@ public class frmJuego extends javax.swing.JFrame {
                 //mostrar jpnDificil
             }
         }
-    }
-    private void mostrarJuego(JPanel panel){
-        jpnPantalla.removeAll();
-        jpnPantalla.setLayout(new BorderLayout());
-        jpnPantalla.add(panel,BorderLayout.CENTER);
->>>>>>> Stashed changes
-        jpnPantalla.revalidate();
-        jpnPantalla.repaint();
     }
     
     /**
@@ -214,13 +199,11 @@ public class frmJuego extends javax.swing.JFrame {
     }//GEN-LAST:event_btnMenuActionPerformed
 
     private void btnReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReiniciarActionPerformed
-<<<<<<< Updated upstream
+
         cronometro.reiniciar();
         lblTimer.setText("0:00");
         actualizar.stop();
-=======
-        
->>>>>>> Stashed changes
+
     }//GEN-LAST:event_btnReiniciarActionPerformed
 
     private void btnIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarActionPerformed
