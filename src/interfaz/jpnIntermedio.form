@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="btnf1c1" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf1c2" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf1c3" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf1c4" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf1c5" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf1c6" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf1c7" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf1c8" min="-2" pref="66" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Component id="btnf2c1" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf2c2" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf2c3" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf2c4" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf2c5" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf2c6" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf2c7" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf2c8" min="-2" pref="66" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Component id="btnf3c1" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf3c2" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf3c3" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf3c4" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf3c5" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf3c6" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf3c7" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf3c8" min="-2" pref="66" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Component id="btnf4c1" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf4c2" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf4c3" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf4c4" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf4c5" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf4c6" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf4c7" min="-2" pref="66" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="btnf4c8" min="-2" pref="66" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btnf1c8" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf1c7" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf1c6" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf1c5" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf1c4" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf1c3" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf1c2" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf1c1" min="-2" pref="63" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btnf2c8" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf2c7" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf2c6" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf2c5" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf2c4" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf2c3" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf2c2" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf2c1" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btnf3c8" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf3c7" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf3c6" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf3c5" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf3c4" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf3c3" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf3c2" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf3c1" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btnf4c8" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf4c7" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf4c6" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf4c5" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf4c4" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf4c3" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf4c2" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnf4c1" alignment="0" min="-2" pref="63" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="btnf1c1">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf1c2">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf1c3">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf1c4">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf1c5">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf1c6">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf1c7">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf1c8">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf2c7">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf2c8">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf2c1">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf2c2">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf2c3">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf2c4">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf2c5">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf2c6">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf3c1">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf3c4">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf3c7">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf3c3">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf3c8">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf3c5">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf3c6">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf3c2">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf4c6">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf4c2">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf4c1">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf4c7">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf4c8">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf4c5">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf4c4">
+    </Component>
+    <Component class="javax.swing.JButton" name="btnf4c3">
+    </Component>
+  </SubComponents>
+</Form>
