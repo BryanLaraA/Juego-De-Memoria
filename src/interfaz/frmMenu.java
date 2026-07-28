@@ -88,13 +88,13 @@ public class frmMenu extends javax.swing.JFrame {
         Nivel nivel = null;
         switch(opc){
             case 0 -> {
-                nivel= nivel.PRINCIPIANTE;
+                nivel= Nivel.PRINCIPIANTE;
             }
             case 1 ->{
-                nivel= nivel.INTERMEDIO;
+                nivel= Nivel.INTERMEDIO;
             }
             case 2 ->{
-                nivel = nivel.AVANZADO;
+                nivel = Nivel.AVANZADO;
             }
         }
         frmJuego juego = new frmJuego(nivel);

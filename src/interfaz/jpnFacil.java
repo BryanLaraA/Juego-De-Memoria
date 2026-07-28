@@ -76,6 +76,7 @@ public class jpnFacil extends javax.swing.JPanel {
         btnf1c3.addActionListener(this::btnf1c3ActionPerformed);
 
         btnf1c4.addActionListener(this::btnf1c4ActionPerformed);
+<<<<<<< Updated upstream
 
         btnf2c1.addActionListener(this::btnf2c1ActionPerformed);
 
@@ -177,6 +178,15 @@ public class jpnFacil extends javax.swing.JPanel {
 
         layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnf1c1, btnf1c2, btnf1c3, btnf1c4, btnf2c1, btnf2c2, btnf2c3, btnf2c4, btnf3c1, btnf3c2, btnf3c3, btnf3c4, btnf4c1, btnf4c2, btnf4c3, btnf4c4});
 
+=======
+        add(btnf1c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, 40, 50));
+
+        btnf4c4.addActionListener(this::btnf4c4ActionPerformed);
+        add(btnf4c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 270, 50, 70));
+
+        btnf1c5.addActionListener(this::btnf1c5ActionPerformed);
+        add(btnf1c5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 40, 50));
+>>>>>>> Stashed changes
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnf2c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c1ActionPerformed

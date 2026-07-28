@@ -6,6 +6,7 @@ package interfaz;
 
 import java.awt.BorderLayout;
 import java.awt.Component;
+import javax.swing.JPanel;
 import juegos.Juego;
 import niveles.Nivel;
 import cronometros.Cronometro;
@@ -22,9 +23,15 @@ public class frmJuego extends javax.swing.JFrame {
 
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frmJuego.class.getName());
     private Juego juego;
+<<<<<<< Updated upstream
 
+=======
+    private Nivel nivelActual;
+   
+>>>>>>> Stashed changes
     /**
      * Creates new form frmJuego
+     * @param nivel
      */
     public frmJuego(Nivel nivel) {
         initComponents();
@@ -40,6 +47,7 @@ public class frmJuego extends javax.swing.JFrame {
         lblTimer.setText("0:00");
 
         juego = new Juego(nivel);
+<<<<<<< Updated upstream
         switch (nivel.getParejas()) {
             case 8 -> {
                 jpnFacil Facil = new jpnFacil();
@@ -61,10 +69,37 @@ public class frmJuego extends javax.swing.JFrame {
     private void mostrarJuego(Component nivel) {
         jpnPantalla.removeAll();
         jpnPantalla.add(nivel, BorderLayout.CENTER);
+=======
+        this.nivelActual=nivel;
+        this.setTitle("Juego de memoria - "+nivel);
+        switch(nivel.getParejas()){
+            case 8 ->{
+                jpnFacil Facil=new jpnFacil();
+                
+                Facil.setSize(590,510);
+                Facil.setLocation(0,0);
+                mostrarJuego(Facil);
+            }
+            case 16 ->{
+                jpnIntermedio Intermedio=new jpnIntermedio();
+                Intermedio.setSize(590,510);
+                Intermedio.setLocation(0,0);
+                mostrarJuego(Intermedio);
+            }
+            case 32 ->{
+                //mostrar jpnDificil
+            }
+        }
+    }
+    private void mostrarJuego(JPanel panel){
+        jpnPantalla.removeAll();
+        jpnPantalla.setLayout(new BorderLayout());
+        jpnPantalla.add(panel,BorderLayout.CENTER);
+>>>>>>> Stashed changes
         jpnPantalla.revalidate();
         jpnPantalla.repaint();
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -173,13 +208,19 @@ public class frmJuego extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuActionPerformed
-        // TODO add your handling code here:
+        frmMenu menu = new frmMenu();
+        menu.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnMenuActionPerformed
 
     private void btnReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReiniciarActionPerformed
+<<<<<<< Updated upstream
         cronometro.reiniciar();
         lblTimer.setText("0:00");
         actualizar.stop();
+=======
+        
+>>>>>>> Stashed changes
     }//GEN-LAST:event_btnReiniciarActionPerformed
 
     private void btnIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarActionPerformed
@@ -215,7 +256,7 @@ public class frmJuego extends javax.swing.JFrame {
         Nivel nivel;
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new frmJuego(null).setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new frmJuego(Nivel.PRINCIPIANTE).setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
