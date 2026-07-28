@@ -39,44 +39,21 @@ public class frmMenu extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtNivel.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         txtNivel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Principiante", "Intermedio", "Avanzado", " " }));
+        jPanel1.add(txtNivel, new org.netbeans.lib.awtextra.AbsoluteConstraints(143, 211, 227, -1));
 
         lblDificultad.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         lblDificultad.setText("Dificultad");
         lblDificultad.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel1.add(lblDificultad, new org.netbeans.lib.awtextra.AbsoluteConstraints(179, 145, -1, -1));
 
         btnIniciar.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         btnIniciar.setText("Iniciar Juego");
         btnIniciar.addActionListener(this::btnIniciarActionPerformed);
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(178, 178, 178)
-                .addComponent(lblDificultad)
-                .addContainerGap(178, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(txtNivel, 0, 227, Short.MAX_VALUE)
-                    .addComponent(btnIniciar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(139, 139, 139))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(144, 144, 144)
-                .addComponent(lblDificultad)
-                .addGap(18, 18, 18)
-                .addComponent(txtNivel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(60, 60, 60)
-                .addComponent(btnIniciar)
-                .addContainerGap(288, Short.MAX_VALUE))
-        );
+        jPanel1.add(btnIniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(143, 313, 227, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 510, 630));
 
