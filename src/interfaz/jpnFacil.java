@@ -12,14 +12,13 @@ import javax.swing.JButton;
  */
 public class jpnFacil extends javax.swing.JPanel {
 
-     JButton[][] bototnes = new JButton [4][4];
+     JButton[][] botones = new JButton [4][4];
     /**
      * Creates new form jpnFacil
      */
     
     public jpnFacil() {
         initComponents();
-        JButton[][] botones = null;
     botones[0][0] = btnf1c1;
     botones[0][1] = btnf1c2;
     botones[0][2] = btnf1c3;

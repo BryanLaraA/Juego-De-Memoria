@@ -88,12 +88,8 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="btnMenu" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="btnIniciar" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="btnDetener" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
                   <Component id="btnReiniciar" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="33" max="32767" attributes="0"/>
+                  <EmptySpace pref="189" max="32767" attributes="0"/>
                   <Component id="lblScore" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="lblIntentos" min="-2" max="-2" attributes="0"/>
@@ -113,8 +109,6 @@
                       <Component id="btnReiniciar" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="lblScore" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="lblIntentos" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnIniciar" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="btnDetener" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="9" max="32767" attributes="0"/>
               </Group>
@@ -152,22 +146,6 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="lblIntentos"/>
           </Properties>
-        </Component>
-        <Component class="javax.swing.JButton" name="btnIniciar">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Iniciar"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnIniciarActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="btnDetener">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Detener"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDetenerActionPerformed"/>
-          </Events>
         </Component>
       </SubComponents>
     </Container>

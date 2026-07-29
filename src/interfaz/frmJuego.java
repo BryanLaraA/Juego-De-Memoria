@@ -24,67 +24,43 @@ public class frmJuego extends javax.swing.JFrame {
     private Juego juego;
     private Nivel nivelActual;
 
-     /* Creates new form frmJuego
+    /* Creates new form frmJuego
      * @param nivel
      */
     public frmJuego(Nivel nivel) {
         initComponents();
-
         jpnPantalla.setLayout(new BorderLayout());
 
         cronometro = new Cronometro();
-
-        actualizar = new Timer(1000, e -> {
-            lblTimer.setText(cronometro.getTiempo_reiniciado());
-        });
-
+        actualizar = new Timer(1000, e -> lblTimer.setText(cronometro.getTiempo_reiniciado()));
         lblTimer.setText("0:00");
 
+        this.nivelActual = nivel;
         juego = new Juego(nivel);
-        this.nivelActual=nivel;
-        switch (nivel.getParejas()) {
-            case 8 -> {
-                jpnFacil Facil = new jpnFacil();
-                Facil.setSize(590, 510);
-                Facil.setLocation(0, 0);
-                mostrarJuego(Facil);
-            }
-            case 16 -> {
-                //mostrar jpnDificil
-            }
-            case 32 -> {
 
-            }
+        JPanel panel;
+        switch (nivel.getParejas()) {
+            case 8 ->
+                panel = new jpnFacil();
+            case 16 ->
+                panel = new jpnIntermedio();
+            case 32 ->
+                panel = new jpnAvanzado();
+            default ->
+                panel = new JPanel();
         }
-        jpnFacil Facil = new jpnFacil();
+        mostrarJuego(panel);
 
     }
 
     private void mostrarJuego(JPanel panel) {
         jpnPantalla.removeAll();
         jpnPantalla.add(panel, BorderLayout.CENTER);
-        
-        this.setTitle("Juego de memoria - "+nivelActual);
-        switch(nivelActual.getParejas()){
-            case 8 ->{
-                jpnFacil Facil=new jpnFacil();
-                
-                Facil.setSize(590,510);
-                Facil.setLocation(0,0);
-                mostrarJuego(Facil);
-            }
-            case 16 ->{
-                jpnIntermedio Intermedio=new jpnIntermedio();
-                Intermedio.setSize(590,510);
-                Intermedio.setLocation(0,0);
-                mostrarJuego(Intermedio);
-            }
-            case 32 ->{
-                //mostrar jpnDificil
-            }
-        }
+        jpnPantalla.revalidate();
+        jpnPantalla.repaint();
+        this.setTitle("Juego de memoria - " + nivelActual);
     }
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -102,8 +78,6 @@ public class frmJuego extends javax.swing.JFrame {
         btnReiniciar = new javax.swing.JButton();
         lblScore = new javax.swing.JLabel();
         lblIntentos = new javax.swing.JLabel();
-        btnIniciar = new javax.swing.JButton();
-        btnDetener = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -145,12 +119,6 @@ public class frmJuego extends javax.swing.JFrame {
 
         lblIntentos.setText("lblIntentos");
 
-        btnIniciar.setText("Iniciar");
-        btnIniciar.addActionListener(this::btnIniciarActionPerformed);
-
-        btnDetener.setText("Detener");
-        btnDetener.addActionListener(this::btnDetenerActionPerformed);
-
         javax.swing.GroupLayout jpnInfoLayout = new javax.swing.GroupLayout(jpnInfo);
         jpnInfo.setLayout(jpnInfoLayout);
         jpnInfoLayout.setHorizontalGroup(
@@ -159,12 +127,8 @@ public class frmJuego extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(btnMenu)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnIniciar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnDetener)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnReiniciar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 189, Short.MAX_VALUE)
                 .addComponent(lblScore)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblIntentos)
@@ -181,9 +145,7 @@ public class frmJuego extends javax.swing.JFrame {
                     .addComponent(btnMenu)
                     .addComponent(btnReiniciar)
                     .addComponent(lblScore)
-                    .addComponent(lblIntentos)
-                    .addComponent(btnIniciar)
-                    .addComponent(btnDetener))
+                    .addComponent(lblIntentos))
                 .addContainerGap(9, Short.MAX_VALUE))
         );
 
@@ -193,6 +155,8 @@ public class frmJuego extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuActionPerformed
+        actualizar.stop();
+        cronometro.detener();
         frmMenu menu = new frmMenu();
         menu.setVisible(true);
         this.dispose();
@@ -201,24 +165,17 @@ public class frmJuego extends javax.swing.JFrame {
     private void btnReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReiniciarActionPerformed
 
         cronometro.reiniciar();
-        lblTimer.setText("0:00");
-        actualizar.stop();
 
+        lblTimer.setText("0:00");
+
+        if (!actualizar.isRunning()) {
+            actualizar.start();
+        }
     }//GEN-LAST:event_btnReiniciarActionPerformed
 
-    private void btnIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarActionPerformed
-        cronometro.iniciar();
-        actualizar.start();
-    }//GEN-LAST:event_btnIniciarActionPerformed
-
-    private void btnDetenerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDetenerActionPerformed
-        cronometro.detener();
-        actualizar.stop();
-    }//GEN-LAST:event_btnDetenerActionPerformed
-
     /**
-     * @param args the command line arguments
-     */
+         * @param args the command line arguments
+         */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -243,8 +200,6 @@ public class frmJuego extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnDetener;
-    private javax.swing.JButton btnIniciar;
     private javax.swing.JButton btnMenu;
     private javax.swing.JButton btnReiniciar;
     private javax.swing.JLabel jLabel1;
