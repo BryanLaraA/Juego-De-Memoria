@@ -32,7 +32,14 @@ public class frmJuego extends javax.swing.JFrame {
         jpnPantalla.setLayout(new BorderLayout());
 
         cronometro = new Cronometro();
-        actualizar = new Timer(1000, e -> lblTimer.setText(cronometro.getTiempo_reiniciado()));
+        cronometro.iniciar();
+
+        actualizar = new Timer(1000, e -> {
+            lblTimer.setText(cronometro.getTiempo_reiniciado());
+        });
+
+        actualizar.start();
+
         lblTimer.setText("0:00");
 
         this.nivelActual = nivel;
@@ -174,8 +181,8 @@ public class frmJuego extends javax.swing.JFrame {
     }//GEN-LAST:event_btnReiniciarActionPerformed
 
     /**
-         * @param args the command line arguments
-         */
+     * @param args the command line arguments
+     */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

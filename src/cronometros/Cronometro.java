@@ -30,13 +30,10 @@ public class Cronometro {
     }
 
     public void detener() {
-        if (timer != null) {
-            timer.stop();
-        }
+        timer.stop();
     }
 
     public void reiniciar() {
-        detener();
         segundos = 0;
     }
 
