@@ -4,17 +4,84 @@
  */
 package interfaz;
 
+import javax.swing.JButton;
+
 /**
  *
  * @author lenno
  */
 public class jpnAvanzado extends javax.swing.JPanel {
-
+JButton[] botones = new JButton [63];
     /**
      * Creates new form jpnAvanzado
      */
     public jpnAvanzado() {
         initComponents();
+        
+botones[0] = btnf1c1;
+botones[1] = btnf1c2;
+botones[2] = btnf1c3;
+botones[3] = btnf1c4;
+botones[4] = btnf1c5;
+botones[5] = btnf1c6;
+botones[6] = btnf1c7;
+botones[7] = btnf1c8;
+botones[8] = btnf2c1;
+botones[9] = btnf2c2;
+botones[10] = btnf2c3;
+botones[11] = btnf2c4;
+botones[12] = btnf2c5;
+botones[13] = btnf2c6;
+botones[14] = btnf2c7;
+botones[15] = btnf2c8;
+botones[16] = btnf3c1;
+botones[17] = btnf3c2;
+botones[18] = btnf3c3;
+botones[19] = btnf3c4;
+botones[20] = btnf3c5;
+botones[21] = btnf3c6;
+botones[22] = btnf3c7;
+botones[23] = btnf3c8;
+botones[24] = btnf4c1;
+botones[25] = btnf4c2;
+botones[26] = btnf4c3;
+botones[27] = btnf4c4;
+botones[28] = btnf4c5;
+botones[29] = btnf4c6;
+botones[30] = btnf4c7;
+botones[31] = btnf4c8;
+botones[32] = btnf5c1;
+botones[33] = btnf5c2;
+botones[34] = btnf5c3;
+botones[35] = btnf5c4;
+botones[36] = btnf5c5;
+botones[37] = btnf5c6;
+botones[38] = btnf5c7;
+botones[39] = btnf5c8;
+botones[40] = btnf6c1;
+botones[41] = btnf6c2;
+botones[42] = btnf6c3;
+botones[43] = btnf6c4;
+botones[44] = btnf6c5;
+botones[45] = btnf6c6;
+botones[46] = btnf6c7;
+botones[47] = btnf6c8;
+botones[48] = btnf7c1;
+botones[49] = btnf7c2;
+botones[50] = btnf7c3;
+botones[51] = btnf7c4;
+botones[52] = btnf7c5;
+botones[53] = btnf7c6;
+botones[54] = btnf7c7;
+botones[55] = btnf7c8;
+botones[56] = btnf8c1;
+botones[57] = btnf8c2;
+botones[58] = btnf8c3;
+botones[59] = btnf8c4;
+botones[60] = btnf8c5;
+botones[61] = btnf8c6;
+botones[62] = btnf8c7;
+botones[63] = btnf8c8;
     }
 
     /**
