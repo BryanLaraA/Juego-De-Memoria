@@ -4,19 +4,61 @@
  */
 package interfaz;
 
+import javax.swing.JButton;
+
+
 /**
  *
  * @author Yumor
  */
 public class jpnIntermedio extends javax.swing.JPanel {
-
+   JButton[] botones = new JButton[31];
     /**
      * Creates new form jpnIntermedio
      */
     public jpnIntermedio() {
         initComponents();
-    }
+        
+    botones[0] = btnf1c1;
+    botones[1] = btnf1c2;
+    botones[2] = btnf1c3;
+    botones[3] = btnf1c4;
+    botones[4] = btnf1c5;
+    botones[5] = btnf1c6;
+    botones[6] = btnf1c7;
+    botones[7] = btnf1c8;
 
+    botones[8] = btnf2c1;
+    botones[9] = btnf2c2;
+    botones[10] = btnf2c3;
+    botones[11] = btnf2c4;
+    botones[12] = btnf2c5;
+    botones[13] = btnf2c6;
+    botones[14] = btnf2c7;
+    botones[15] = btnf2c8;
+
+    botones[16] = btnf3c1;
+    botones[17] = btnf3c2;
+    botones[18] = btnf3c3;
+    botones[19] = btnf3c4;
+    botones[20] = btnf3c5;
+    botones[21] = btnf3c6;
+    botones[22] = btnf3c7;
+    botones[23] = btnf3c8;
+
+    botones[24] = btnf4c1;
+    botones[25] = btnf4c2;
+    botones[26] = btnf4c3;
+    botones[27] = btnf4c4;
+    botones[28] = btnf4c5;
+    botones[29] = btnf4c6;
+    botones[30] = btnf4c7;
+    botones[31] = btnf4c8;
+    }
+    
+    
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
