@@ -5,6 +5,7 @@
 package interfaz;
 
 import javax.swing.JButton;
+import juegos.Juego;
 
 
 /**
@@ -12,12 +13,15 @@ import javax.swing.JButton;
  * @author Yumor
  */
 public class jpnIntermedio extends javax.swing.JPanel {
-   JButton[] botones = new JButton[31];
+    private Juego juego;
+   JButton[] botones = new JButton[32];
     /**
      * Creates new form jpnIntermedio
      */
-    public jpnIntermedio() {
+    public jpnIntermedio(Juego juego) {
+        
         initComponents();
+        this.juego = juego;
         
     botones[0] = btnf1c1;
     botones[1] = btnf1c2;

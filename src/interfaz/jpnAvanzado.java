@@ -5,18 +5,22 @@
 package interfaz;
 
 import javax.swing.JButton;
+import juegos.Juego;
 
 /**
  *
  * @author lenno
  */
 public class jpnAvanzado extends javax.swing.JPanel {
+    private Juego juego;
 JButton[] botones = new JButton [63];
     /**
      * Creates new form jpnAvanzado
      */
-    public jpnAvanzado() {
+    public jpnAvanzado(Juego juego) {
+        
         initComponents();
+        this.juego = juego;
         
 botones[0] = btnf1c1;
 botones[1] = btnf1c2;

@@ -5,35 +5,35 @@
 package interfaz;
 
 import javax.swing.JButton;
+import juegos.Juego;
 
 /**
  *
  * @author andre
  */
 public class jpnFacil extends javax.swing.JPanel {
-
+     private Juego juego;
      JButton[] botones = new JButton [15];
     /**
      * Creates new form jpnFacil
      */
     
-    public jpnFacil() {
+    public jpnFacil(Juego juego) {
         initComponents();
+        this.juego = juego;
+        
     botones[0] = btnf1c1;
     botones[1] = btnf1c2;
     botones[2] = btnf1c3;
     botones[3] = btnf1c4;
-
     botones[4] = btnf2c1;
     botones[5]= btnf2c2;
     botones[6] = btnf2c3;
     botones[7] = btnf2c4;
-
     botones[8] = btnf3c1;
     botones[9]= btnf3c2;
     botones[10] = btnf3c3;
     botones[11] = btnf3c4;
-
     botones[12] = btnf4c1;
     botones[13]= btnf4c2;
     botones[14]= btnf4c3;
