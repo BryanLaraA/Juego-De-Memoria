@@ -51,13 +51,13 @@ public class frmJuego extends javax.swing.JFrame {
         JPanel panel;
         switch (nivel.getParejas()) {
             case 8 ->
-                panel = new jpnFacil();
+                panel = new jpnFacil(this.juego);
             case 16 ->
-                panel = new jpnIntermedio();
+                panel = new jpnIntermedio(this.juego);
             case 32 ->
-                panel = new jpnAvanzado();
+                panel = new jpnAvanzado(this.juego);
             default ->
-                panel = new JPanel();
+                panel = new JPanel(this.juego);
         }
         mostrarJuego(panel);
 
