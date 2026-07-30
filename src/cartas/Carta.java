@@ -33,6 +33,7 @@ public class Carta {
     }
     
     public void setVisible(boolean estado){
+        this.estado = estado;
     }
     
     public Carta(int id) {
