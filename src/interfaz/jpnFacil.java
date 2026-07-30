@@ -13,7 +13,7 @@ import juegos.Juego;
  */
 public class jpnFacil extends javax.swing.JPanel {
      private Juego juego;
-     JButton[] botones = new JButton [15];
+     JButton[] botones = new JButton [16];
     /**
      * Creates new form jpnFacil
      */

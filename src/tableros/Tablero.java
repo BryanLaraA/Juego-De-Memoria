@@ -8,6 +8,11 @@ public class Tablero {
     private int filas;
     private int columnas;
 
+    public Carta[][] getTablero() {
+        return tablero;
+    }
+    
+
     public Tablero(Nivel nivel) {
         switch (nivel){
             case PRINCIPIANTE: 

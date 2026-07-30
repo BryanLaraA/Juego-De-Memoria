@@ -57,7 +57,7 @@ public class frmJuego extends javax.swing.JFrame {
             case 32 ->
                 panel = new jpnAvanzado(this.juego);
             default ->
-                panel = new JPanel(this.juego);
+                panel = new JPanel();
         }
         mostrarJuego(panel);
 
