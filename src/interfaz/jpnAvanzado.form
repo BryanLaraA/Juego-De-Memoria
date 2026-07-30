@@ -18,168 +18,169 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel1" max="32767" attributes="0"/>
+              <Component id="jPanel1" pref="498" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel1" max="32767" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-          </Group>
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
     <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[510, 590]"/>
+        </Property>
+      </Properties>
 
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="131" max="32767" attributes="0"/>
+                  <EmptySpace pref="35" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="btnf1c1" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c1" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c2" min="-2" pref="51" max="-2" attributes="0"/>
+                          <Component id="btnf1c2" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf13" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf13" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c3" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c3" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c4" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c4" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c5" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c5" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c6" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c6" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c7" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c7" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="btnf2c1" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf2c1" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf2c2" min="-2" pref="51" max="-2" attributes="0"/>
+                          <Component id="btnf2c2" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf2c3" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf2c3" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c10" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c10" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c13" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c13" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c16" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c16" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c11" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c11" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c12" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c12" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="btnf3c1" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf3c1" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf3c2" min="-2" pref="51" max="-2" attributes="0"/>
+                          <Component id="btnf3c2" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf3c3" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf3c3" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c18" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c18" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c21" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c21" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c32" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c32" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c19" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c19" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c20" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c20" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="btnf4c1" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf4c1" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf4c2" min="-2" pref="51" max="-2" attributes="0"/>
+                          <Component id="btnf4c2" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf4c3" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf4c3" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c24" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c24" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c28" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c28" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c31" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c31" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c26" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c26" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c27" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c27" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="btnf5c1" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf5c1" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf5c2" min="-2" pref="51" max="-2" attributes="0"/>
+                          <Component id="btnf5c2" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c43" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c43" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c9" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c9" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c40" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c40" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c57" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c57" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c17" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c17" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c39" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c39" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="btnf6c1" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf6c1" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf6c2" min="-2" pref="51" max="-2" attributes="0"/>
+                          <Component id="btnf6c2" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c53" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c53" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c42" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c42" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c51" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c51" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c54" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c54" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c46" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c46" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c49" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c49" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="btnf7c1" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf7c1" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf7c2" min="-2" pref="51" max="-2" attributes="0"/>
+                          <Component id="btnf7c2" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c36" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c36" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c55" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c55" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c33" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c33" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c50" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c50" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c56" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c56" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c22" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c22" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="btnf8c1" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf8c1" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf8c2" min="-2" pref="51" max="-2" attributes="0"/>
+                          <Component id="btnf8c2" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c47" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c47" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c35" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c35" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c44" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c44" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c48" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c48" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c37" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c37" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="btnf1c38" min="-2" pref="49" max="-2" attributes="0"/>
+                          <Component id="btnf1c38" linkSize="1" min="-2" pref="49" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="131" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -189,264 +190,776 @@
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="btnf1c1" alignment="0" pref="80" max="32767" attributes="0"/>
-                          <Component id="btnf13" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c3" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnf1c4" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c5" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnf1c7" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c6" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btnf1c1" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf13" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c3" linkSize="2" alignment="1" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c4" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c5" linkSize="2" alignment="1" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c7" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c6" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
                       </Group>
-                      <Component id="btnf1c2" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="btnf1c2" linkSize="2" alignment="0" min="-2" pref="67" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="btnf2c1" alignment="0" pref="80" max="32767" attributes="0"/>
-                          <Component id="btnf2c3" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c10" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnf1c13" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c16" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnf1c12" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c11" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btnf2c1" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf2c3" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c10" linkSize="2" alignment="1" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c13" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c16" linkSize="2" alignment="1" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c12" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c11" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
                       </Group>
-                      <Component id="btnf2c2" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="btnf2c2" linkSize="2" alignment="0" min="-2" pref="67" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="btnf3c1" alignment="0" pref="80" max="32767" attributes="0"/>
-                          <Component id="btnf3c3" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c18" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnf1c21" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c32" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnf1c20" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c19" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btnf3c1" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf3c3" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c18" linkSize="2" alignment="1" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c21" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c32" linkSize="2" alignment="1" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c20" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c19" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
                       </Group>
-                      <Component id="btnf3c2" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="btnf3c2" linkSize="2" alignment="0" min="-2" pref="67" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="btnf4c1" alignment="0" pref="80" max="32767" attributes="0"/>
-                          <Component id="btnf4c3" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c24" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnf1c28" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c31" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnf1c27" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c26" alignment="0" max="32767" attributes="0"/>
+                          <Component id="btnf4c1" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf4c3" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c24" linkSize="2" alignment="1" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c28" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c31" linkSize="2" alignment="1" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c27" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c26" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
                       </Group>
-                      <Component id="btnf4c2" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="btnf4c2" linkSize="2" alignment="0" min="-2" pref="67" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="btnf5c1" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c43" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c9" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnf1c40" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c57" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnf1c39" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c17" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                          <Component id="btnf5c1" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c43" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c9" linkSize="2" alignment="1" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c40" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c57" linkSize="2" alignment="1" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c39" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c17" linkSize="2" alignment="0" min="-2" pref="67" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="btnf5c2" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="btnf5c2" linkSize="2" alignment="0" min="-2" pref="67" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="btnf6c1" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c53" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c42" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnf1c51" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c54" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnf1c49" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c46" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                          <Component id="btnf6c1" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c53" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c42" linkSize="2" alignment="1" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c51" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c54" linkSize="2" alignment="1" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c49" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c46" linkSize="2" alignment="0" min="-2" pref="67" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="btnf6c2" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="btnf6c2" linkSize="2" alignment="0" min="-2" pref="67" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="btnf7c1" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c36" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c55" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnf1c33" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c50" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnf1c22" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c56" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                          <Component id="btnf7c1" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c36" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c55" linkSize="2" alignment="1" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c33" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c50" linkSize="2" alignment="1" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c22" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c56" linkSize="2" alignment="0" min="-2" pref="67" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="btnf7c2" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="btnf7c2" linkSize="2" alignment="0" min="-2" pref="67" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="btnf8c1" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c47" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c35" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnf1c44" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c48" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btnf1c38" alignment="0" max="32767" attributes="0"/>
-                          <Component id="btnf1c37" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                          <Component id="btnf8c1" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c47" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c35" linkSize="2" alignment="1" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c44" linkSize="2" alignment="0" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c48" linkSize="2" alignment="1" pref="67" max="32767" attributes="0"/>
+                          <Component id="btnf1c37" linkSize="2" alignment="0" min="-2" pref="67" max="-2" attributes="0"/>
+                          <Component id="btnf1c38" linkSize="2" alignment="1" min="-2" pref="67" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="btnf8c2" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="btnf8c2" linkSize="2" alignment="0" min="-2" pref="67" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="69" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
         <Component class="javax.swing.JButton" name="btnf1c6">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c2">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnf1c2ActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c4">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c1">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf13">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c5">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c3">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c7">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c10">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c11">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf2c2">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnf2c2ActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c12">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c13">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf2c1">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf2c3">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c16">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c18">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c19">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf3c2">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnf3c2ActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c20">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c21">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf3c1">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c24">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf3c3">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c26">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf4c2">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnf4c2ActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c27">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c28">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf4c1">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf4c3">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c31">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c32">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf7c2">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnf7c2ActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c22">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c33">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf7c1">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c35">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c36">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c9">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c37">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf8c2">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnf8c2ActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c38">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c17">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf5c2">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnf5c2ActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c39">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c40">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf5c1">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c42">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c43">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c44">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf8c1">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c46">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c47">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf6c2">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnf6c2ActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c48">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c49">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c50">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c51">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf6c1">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c53">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c54">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c55">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c56">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btnf1c57">
+          <Properties>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[63, 5]"/>
+            </Property>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>
