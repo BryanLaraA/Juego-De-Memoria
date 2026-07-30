@@ -22,7 +22,7 @@ public class Juego {
         primeraCarta = null;
         segundaCarta = null;
     }
-
+    
     public void nuevaPartida() {
         tablero = new Tablero(nivel);
         jugador = new Jugador();

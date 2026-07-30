@@ -44,6 +44,9 @@ public class frmJuego extends javax.swing.JFrame {
 
         this.nivelActual = nivel;
         juego = new Juego(nivel);
+        
+        lblScore.setText("Puntaje: " + juego.getJugador().getScore());
+        lblIntentos.setText("Intentos: " + juego.getJugador().getAttempts());
 
         JPanel panel;
         switch (nivel.getParejas()) {
