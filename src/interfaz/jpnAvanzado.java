@@ -27,113 +27,114 @@ public class jpnAvanzado extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        btnf1c6 = new javax.swing.JButton();
-        btnf1c2 = new javax.swing.JButton();
-        btnf1c4 = new javax.swing.JButton();
-        btnf1c1 = new javax.swing.JButton();
-        btnf13 = new javax.swing.JButton();
-        btnf1c5 = new javax.swing.JButton();
-        btnf1c3 = new javax.swing.JButton();
         btnf1c7 = new javax.swing.JButton();
-        btnf1c10 = new javax.swing.JButton();
-        btnf1c11 = new javax.swing.JButton();
+        btnf1c2 = new javax.swing.JButton();
+        btnf1c5 = new javax.swing.JButton();
+        btnf1c1 = new javax.swing.JButton();
+        btnf1c3 = new javax.swing.JButton();
+        btnf1c6 = new javax.swing.JButton();
+        btnf1c4 = new javax.swing.JButton();
+        btnf1c8 = new javax.swing.JButton();
+        btnf2c4 = new javax.swing.JButton();
+        btnf2c7 = new javax.swing.JButton();
         btnf2c2 = new javax.swing.JButton();
-        btnf1c12 = new javax.swing.JButton();
-        btnf1c13 = new javax.swing.JButton();
+        btnf2c8 = new javax.swing.JButton();
+        btnf2c5 = new javax.swing.JButton();
         btnf2c1 = new javax.swing.JButton();
         btnf2c3 = new javax.swing.JButton();
-        btnf1c16 = new javax.swing.JButton();
-        btnf1c18 = new javax.swing.JButton();
-        btnf1c19 = new javax.swing.JButton();
+        btnf2c6 = new javax.swing.JButton();
+        btnf3c4 = new javax.swing.JButton();
+        btnf3c7 = new javax.swing.JButton();
         btnf3c2 = new javax.swing.JButton();
-        btnf1c20 = new javax.swing.JButton();
-        btnf1c21 = new javax.swing.JButton();
+        btnf3c8 = new javax.swing.JButton();
+        btnf3c5 = new javax.swing.JButton();
         btnf3c1 = new javax.swing.JButton();
-        btnf1c24 = new javax.swing.JButton();
+        btnf4c4 = new javax.swing.JButton();
         btnf3c3 = new javax.swing.JButton();
-        btnf1c26 = new javax.swing.JButton();
+        btnf4c7 = new javax.swing.JButton();
         btnf4c2 = new javax.swing.JButton();
-        btnf1c27 = new javax.swing.JButton();
-        btnf1c28 = new javax.swing.JButton();
+        btnf4c8 = new javax.swing.JButton();
+        btnf4c5 = new javax.swing.JButton();
         btnf4c1 = new javax.swing.JButton();
         btnf4c3 = new javax.swing.JButton();
-        btnf1c31 = new javax.swing.JButton();
-        btnf1c32 = new javax.swing.JButton();
+        btnf4c6 = new javax.swing.JButton();
+        btnf3c6 = new javax.swing.JButton();
         btnf7c2 = new javax.swing.JButton();
-        btnf1c22 = new javax.swing.JButton();
-        btnf1c33 = new javax.swing.JButton();
+        btnf7c8 = new javax.swing.JButton();
+        btnf7c5 = new javax.swing.JButton();
         btnf7c1 = new javax.swing.JButton();
-        btnf1c35 = new javax.swing.JButton();
-        btnf1c36 = new javax.swing.JButton();
-        btnf1c9 = new javax.swing.JButton();
-        btnf1c37 = new javax.swing.JButton();
+        btnf8c4 = new javax.swing.JButton();
+        btnf7c3 = new javax.swing.JButton();
+        btnf5c4 = new javax.swing.JButton();
+        btnf8c7 = new javax.swing.JButton();
         btnf8c2 = new javax.swing.JButton();
-        btnf1c38 = new javax.swing.JButton();
-        btnf1c17 = new javax.swing.JButton();
+        btnf8c8 = new javax.swing.JButton();
+        btnf5c7 = new javax.swing.JButton();
         btnf5c2 = new javax.swing.JButton();
-        btnf1c39 = new javax.swing.JButton();
-        btnf1c40 = new javax.swing.JButton();
+        btnf5c8 = new javax.swing.JButton();
+        btnf5c5 = new javax.swing.JButton();
         btnf5c1 = new javax.swing.JButton();
-        btnf1c42 = new javax.swing.JButton();
-        btnf1c43 = new javax.swing.JButton();
-        btnf1c44 = new javax.swing.JButton();
+        btnf6c4 = new javax.swing.JButton();
+        btnf5c3 = new javax.swing.JButton();
+        btnf8c5 = new javax.swing.JButton();
         btnf8c1 = new javax.swing.JButton();
-        btnf1c46 = new javax.swing.JButton();
-        btnf1c47 = new javax.swing.JButton();
+        btnf6c7 = new javax.swing.JButton();
+        btnf8c3 = new javax.swing.JButton();
         btnf6c2 = new javax.swing.JButton();
-        btnf1c48 = new javax.swing.JButton();
-        btnf1c49 = new javax.swing.JButton();
-        btnf1c50 = new javax.swing.JButton();
-        btnf1c51 = new javax.swing.JButton();
+        btnf8c6 = new javax.swing.JButton();
+        btnf6c8 = new javax.swing.JButton();
+        btnf7c6 = new javax.swing.JButton();
+        btnf6c5 = new javax.swing.JButton();
         btnf6c1 = new javax.swing.JButton();
-        btnf1c53 = new javax.swing.JButton();
-        btnf1c54 = new javax.swing.JButton();
-        btnf1c55 = new javax.swing.JButton();
-        btnf1c56 = new javax.swing.JButton();
-        btnf1c57 = new javax.swing.JButton();
+        btnf6c3 = new javax.swing.JButton();
+        btnf6c6 = new javax.swing.JButton();
+        btnf7c4 = new javax.swing.JButton();
+        btnf7c7 = new javax.swing.JButton();
+        btnf5c6 = new javax.swing.JButton();
 
         jPanel1.setPreferredSize(new java.awt.Dimension(510, 590));
 
-        btnf1c6.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c6.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf1c7.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf1c7.setMinimumSize(new java.awt.Dimension(63, 5));
 
         btnf1c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf1c2.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf1c2.addActionListener(this::btnf1c2ActionPerformed);
 
-        btnf1c4.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c4.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf1c5.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf1c5.setMinimumSize(new java.awt.Dimension(63, 5));
 
         btnf1c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf1c1.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf13.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf13.setMinimumSize(new java.awt.Dimension(63, 5));
-
-        btnf1c5.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c5.setMinimumSize(new java.awt.Dimension(63, 5));
-
         btnf1c3.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf1c3.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c7.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c7.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf1c6.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf1c6.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c10.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c10.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf1c4.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf1c4.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf1c4.addActionListener(this::btnf1c4ActionPerformed);
 
-        btnf1c11.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c11.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf1c8.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf1c8.setMinimumSize(new java.awt.Dimension(63, 5));
+
+        btnf2c4.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf2c4.setMinimumSize(new java.awt.Dimension(63, 5));
+
+        btnf2c7.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf2c7.setMinimumSize(new java.awt.Dimension(63, 5));
 
         btnf2c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf2c2.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf2c2.addActionListener(this::btnf2c2ActionPerformed);
 
-        btnf1c12.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c12.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf2c8.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf2c8.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c13.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c13.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf2c5.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf2c5.setMinimumSize(new java.awt.Dimension(63, 5));
 
         btnf2c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf2c1.setMinimumSize(new java.awt.Dimension(63, 5));
@@ -141,46 +142,46 @@ public class jpnAvanzado extends javax.swing.JPanel {
         btnf2c3.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf2c3.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c16.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c16.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf2c6.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf2c6.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c18.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c18.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf3c4.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf3c4.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c19.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c19.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf3c7.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf3c7.setMinimumSize(new java.awt.Dimension(63, 5));
 
         btnf3c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf3c2.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf3c2.addActionListener(this::btnf3c2ActionPerformed);
 
-        btnf1c20.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c20.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf3c8.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf3c8.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c21.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c21.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf3c5.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf3c5.setMinimumSize(new java.awt.Dimension(63, 5));
 
         btnf3c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf3c1.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c24.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c24.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf4c4.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf4c4.setMinimumSize(new java.awt.Dimension(63, 5));
 
         btnf3c3.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf3c3.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c26.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c26.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf4c7.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf4c7.setMinimumSize(new java.awt.Dimension(63, 5));
 
         btnf4c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf4c2.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf4c2.addActionListener(this::btnf4c2ActionPerformed);
 
-        btnf1c27.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c27.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf4c8.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf4c8.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c28.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c28.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf4c5.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf4c5.setMinimumSize(new java.awt.Dimension(63, 5));
 
         btnf4c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf4c1.setMinimumSize(new java.awt.Dimension(63, 5));
@@ -188,111 +189,111 @@ public class jpnAvanzado extends javax.swing.JPanel {
         btnf4c3.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf4c3.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c31.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c31.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf4c6.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf4c6.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c32.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c32.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf3c6.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf3c6.setMinimumSize(new java.awt.Dimension(63, 5));
 
         btnf7c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf7c2.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf7c2.addActionListener(this::btnf7c2ActionPerformed);
 
-        btnf1c22.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c22.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf7c8.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf7c8.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c33.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c33.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf7c5.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf7c5.setMinimumSize(new java.awt.Dimension(63, 5));
 
         btnf7c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf7c1.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c35.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c35.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf8c4.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf8c4.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c36.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c36.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf7c3.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf7c3.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c9.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c9.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf5c4.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf5c4.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c37.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c37.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf8c7.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf8c7.setMinimumSize(new java.awt.Dimension(63, 5));
 
         btnf8c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf8c2.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf8c2.addActionListener(this::btnf8c2ActionPerformed);
 
-        btnf1c38.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c38.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf8c8.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf8c8.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c17.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c17.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf5c7.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf5c7.setMinimumSize(new java.awt.Dimension(63, 5));
 
         btnf5c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf5c2.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf5c2.addActionListener(this::btnf5c2ActionPerformed);
 
-        btnf1c39.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c39.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf5c8.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf5c8.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c40.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c40.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf5c5.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf5c5.setMinimumSize(new java.awt.Dimension(63, 5));
 
         btnf5c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf5c1.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c42.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c42.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf6c4.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf6c4.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c43.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c43.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf5c3.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf5c3.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c44.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c44.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf8c5.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf8c5.setMinimumSize(new java.awt.Dimension(63, 5));
 
         btnf8c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf8c1.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c46.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c46.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf6c7.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf6c7.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c47.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c47.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf8c3.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf8c3.setMinimumSize(new java.awt.Dimension(63, 5));
 
         btnf6c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf6c2.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf6c2.addActionListener(this::btnf6c2ActionPerformed);
 
-        btnf1c48.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c48.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf8c6.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf8c6.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c49.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c49.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf6c8.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf6c8.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c50.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c50.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf7c6.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf7c6.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c51.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c51.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf6c5.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf6c5.setMinimumSize(new java.awt.Dimension(63, 5));
 
         btnf6c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf6c1.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c53.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c53.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf6c3.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf6c3.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c54.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c54.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf6c6.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf6c6.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c55.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c55.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf7c4.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf7c4.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c56.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c56.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf7c7.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf7c7.setMinimumSize(new java.awt.Dimension(63, 5));
 
-        btnf1c57.setMaximumSize(new java.awt.Dimension(63, 5));
-        btnf1c57.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf5c6.setMaximumSize(new java.awt.Dimension(63, 5));
+        btnf5c6.setMinimumSize(new java.awt.Dimension(63, 5));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -306,8 +307,6 @@ public class jpnAvanzado extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnf1c2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf13, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnf1c3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnf1c4, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -316,7 +315,9 @@ public class jpnAvanzado extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnf1c6, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c7, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnf1c7, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnf1c8, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(btnf2c1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -324,15 +325,15 @@ public class jpnAvanzado extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnf2c3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c10, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf2c4, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c13, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf2c5, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c16, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf2c6, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c11, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf2c7, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c12, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnf2c8, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(btnf3c1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -340,15 +341,15 @@ public class jpnAvanzado extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnf3c3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c18, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf3c4, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c21, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf3c5, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c32, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf3c6, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c19, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf3c7, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c20, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnf3c8, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(btnf4c1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -356,83 +357,83 @@ public class jpnAvanzado extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnf4c3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c24, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf4c4, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c28, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf4c5, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c31, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf4c6, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c26, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf4c7, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c27, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnf4c8, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(btnf5c1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnf5c2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c43, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf5c3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c9, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf5c4, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c40, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf5c5, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c57, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf5c6, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c17, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf5c7, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c39, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnf5c8, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(btnf6c1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnf6c2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c53, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf6c3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c42, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf6c4, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c51, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf6c5, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c54, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf6c6, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c46, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf6c7, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c49, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnf6c8, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(btnf7c1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnf7c2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c36, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf7c3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c55, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf7c4, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c33, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf7c5, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c50, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf7c6, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c56, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf7c7, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c22, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnf7c8, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(btnf8c1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnf8c2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c47, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf8c3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c35, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf8c4, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c44, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf8c5, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c48, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf8c6, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c37, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf8c7, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c38, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnf8c8, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(29, 29, 29))
         );
 
-        jPanel1Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnf13, btnf1c1, btnf1c10, btnf1c11, btnf1c12, btnf1c13, btnf1c16, btnf1c17, btnf1c18, btnf1c19, btnf1c2, btnf1c20, btnf1c21, btnf1c22, btnf1c24, btnf1c26, btnf1c27, btnf1c28, btnf1c3, btnf1c31, btnf1c32, btnf1c33, btnf1c35, btnf1c36, btnf1c37, btnf1c38, btnf1c39, btnf1c4, btnf1c40, btnf1c42, btnf1c43, btnf1c44, btnf1c46, btnf1c47, btnf1c48, btnf1c49, btnf1c5, btnf1c50, btnf1c51, btnf1c53, btnf1c54, btnf1c55, btnf1c56, btnf1c57, btnf1c6, btnf1c7, btnf1c9, btnf2c1, btnf2c2, btnf2c3, btnf3c1, btnf3c2, btnf3c3, btnf4c1, btnf4c2, btnf4c3, btnf5c1, btnf5c2, btnf6c1, btnf6c2, btnf7c1, btnf7c2, btnf8c1, btnf8c2});
+        jPanel1Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnf1c1, btnf1c2, btnf1c3, btnf1c4, btnf1c5, btnf1c6, btnf1c7, btnf1c8, btnf2c1, btnf2c2, btnf2c3, btnf2c4, btnf2c5, btnf2c6, btnf2c7, btnf2c8, btnf3c1, btnf3c2, btnf3c3, btnf3c4, btnf3c5, btnf3c6, btnf3c7, btnf3c8, btnf4c1, btnf4c2, btnf4c3, btnf4c4, btnf4c5, btnf4c6, btnf4c7, btnf4c8, btnf5c1, btnf5c2, btnf5c3, btnf5c4, btnf5c5, btnf5c6, btnf5c7, btnf5c8, btnf6c1, btnf6c2, btnf6c3, btnf6c4, btnf6c5, btnf6c6, btnf6c7, btnf6c8, btnf7c1, btnf7c2, btnf7c3, btnf7c4, btnf7c5, btnf7c6, btnf7c7, btnf7c8, btnf8c1, btnf8c2, btnf8c3, btnf8c4, btnf8c5, btnf8c6, btnf8c7, btnf8c8});
 
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -441,94 +442,94 @@ public class jpnAvanzado extends javax.swing.JPanel {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(btnf1c1, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf13, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c4, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c7, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c6, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE))
+                        .addComponent(btnf1c3, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf1c4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf1c5, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf1c6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf1c8, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf1c7, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE))
                     .addComponent(btnf1c2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(btnf2c1, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
                         .addComponent(btnf2c3, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c13, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c12, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c11, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE))
+                        .addComponent(btnf2c4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf2c5, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf2c6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf2c8, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf2c7, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE))
                     .addComponent(btnf2c2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(btnf3c1, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
                         .addComponent(btnf3c3, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c21, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c32, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c20, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c19, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE))
+                        .addComponent(btnf3c4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf3c5, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf3c6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf3c8, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf3c7, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE))
                     .addComponent(btnf3c2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(btnf4c1, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
                         .addComponent(btnf4c3, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c24, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c28, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c31, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c27, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c26, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE))
+                        .addComponent(btnf4c4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf4c5, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf4c6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf4c8, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf4c7, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE))
                     .addComponent(btnf4c2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(btnf5c1, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c43, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c40, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c57, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c39, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c17, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnf5c3, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf5c4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf5c5, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf5c6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf5c8, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf5c7, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(btnf5c2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(btnf6c1, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c53, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c42, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c51, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c54, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c49, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c46, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnf6c3, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf6c4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf6c5, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf6c6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf6c8, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf6c7, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(btnf6c2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(btnf7c1, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c36, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c55, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c33, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c50, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c22, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c56, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnf7c3, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf7c4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf7c5, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf7c6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf7c8, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf7c7, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(btnf7c2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(btnf8c1, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c47, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c35, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c44, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c48, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c37, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btnf1c38, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnf8c3, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf8c4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf8c5, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf8c6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
+                        .addComponent(btnf8c7, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnf8c8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(btnf8c2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnf13, btnf1c1, btnf1c10, btnf1c11, btnf1c12, btnf1c13, btnf1c16, btnf1c17, btnf1c18, btnf1c19, btnf1c2, btnf1c20, btnf1c21, btnf1c22, btnf1c24, btnf1c26, btnf1c27, btnf1c28, btnf1c3, btnf1c31, btnf1c32, btnf1c33, btnf1c35, btnf1c36, btnf1c37, btnf1c38, btnf1c39, btnf1c4, btnf1c40, btnf1c42, btnf1c43, btnf1c44, btnf1c46, btnf1c47, btnf1c48, btnf1c49, btnf1c5, btnf1c50, btnf1c51, btnf1c53, btnf1c54, btnf1c55, btnf1c56, btnf1c57, btnf1c6, btnf1c7, btnf1c9, btnf2c1, btnf2c2, btnf2c3, btnf3c1, btnf3c2, btnf3c3, btnf4c1, btnf4c2, btnf4c3, btnf5c1, btnf5c2, btnf6c1, btnf6c2, btnf7c1, btnf7c2, btnf8c1, btnf8c2});
+        jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnf1c1, btnf1c2, btnf1c3, btnf1c4, btnf1c5, btnf1c6, btnf1c7, btnf1c8, btnf2c1, btnf2c2, btnf2c3, btnf2c4, btnf2c5, btnf2c6, btnf2c7, btnf2c8, btnf3c1, btnf3c2, btnf3c3, btnf3c4, btnf3c5, btnf3c6, btnf3c7, btnf3c8, btnf4c1, btnf4c2, btnf4c3, btnf4c4, btnf4c5, btnf4c6, btnf4c7, btnf4c8, btnf5c1, btnf5c2, btnf5c3, btnf5c4, btnf5c5, btnf5c6, btnf5c7, btnf5c8, btnf6c1, btnf6c2, btnf6c3, btnf6c4, btnf6c5, btnf6c6, btnf6c7, btnf6c8, btnf7c1, btnf7c2, btnf7c3, btnf7c4, btnf7c5, btnf7c6, btnf7c7, btnf7c8, btnf8c1, btnf8c2, btnf8c3, btnf8c4, btnf8c5, btnf8c6, btnf8c7, btnf8c8});
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -577,72 +578,76 @@ public class jpnAvanzado extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnf6c2ActionPerformed
 
+    private void btnf1c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnf1c4ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnf13;
     private javax.swing.JButton btnf1c1;
-    private javax.swing.JButton btnf1c10;
-    private javax.swing.JButton btnf1c11;
-    private javax.swing.JButton btnf1c12;
-    private javax.swing.JButton btnf1c13;
-    private javax.swing.JButton btnf1c16;
-    private javax.swing.JButton btnf1c17;
-    private javax.swing.JButton btnf1c18;
-    private javax.swing.JButton btnf1c19;
     private javax.swing.JButton btnf1c2;
-    private javax.swing.JButton btnf1c20;
-    private javax.swing.JButton btnf1c21;
-    private javax.swing.JButton btnf1c22;
-    private javax.swing.JButton btnf1c24;
-    private javax.swing.JButton btnf1c26;
-    private javax.swing.JButton btnf1c27;
-    private javax.swing.JButton btnf1c28;
     private javax.swing.JButton btnf1c3;
-    private javax.swing.JButton btnf1c31;
-    private javax.swing.JButton btnf1c32;
-    private javax.swing.JButton btnf1c33;
-    private javax.swing.JButton btnf1c35;
-    private javax.swing.JButton btnf1c36;
-    private javax.swing.JButton btnf1c37;
-    private javax.swing.JButton btnf1c38;
-    private javax.swing.JButton btnf1c39;
     private javax.swing.JButton btnf1c4;
-    private javax.swing.JButton btnf1c40;
-    private javax.swing.JButton btnf1c42;
-    private javax.swing.JButton btnf1c43;
-    private javax.swing.JButton btnf1c44;
-    private javax.swing.JButton btnf1c46;
-    private javax.swing.JButton btnf1c47;
-    private javax.swing.JButton btnf1c48;
-    private javax.swing.JButton btnf1c49;
     private javax.swing.JButton btnf1c5;
-    private javax.swing.JButton btnf1c50;
-    private javax.swing.JButton btnf1c51;
-    private javax.swing.JButton btnf1c53;
-    private javax.swing.JButton btnf1c54;
-    private javax.swing.JButton btnf1c55;
-    private javax.swing.JButton btnf1c56;
-    private javax.swing.JButton btnf1c57;
     private javax.swing.JButton btnf1c6;
     private javax.swing.JButton btnf1c7;
-    private javax.swing.JButton btnf1c9;
+    private javax.swing.JButton btnf1c8;
     private javax.swing.JButton btnf2c1;
     private javax.swing.JButton btnf2c2;
     private javax.swing.JButton btnf2c3;
+    private javax.swing.JButton btnf2c4;
+    private javax.swing.JButton btnf2c5;
+    private javax.swing.JButton btnf2c6;
+    private javax.swing.JButton btnf2c7;
+    private javax.swing.JButton btnf2c8;
     private javax.swing.JButton btnf3c1;
     private javax.swing.JButton btnf3c2;
     private javax.swing.JButton btnf3c3;
+    private javax.swing.JButton btnf3c4;
+    private javax.swing.JButton btnf3c5;
+    private javax.swing.JButton btnf3c6;
+    private javax.swing.JButton btnf3c7;
+    private javax.swing.JButton btnf3c8;
     private javax.swing.JButton btnf4c1;
     private javax.swing.JButton btnf4c2;
     private javax.swing.JButton btnf4c3;
+    private javax.swing.JButton btnf4c4;
+    private javax.swing.JButton btnf4c5;
+    private javax.swing.JButton btnf4c6;
+    private javax.swing.JButton btnf4c7;
+    private javax.swing.JButton btnf4c8;
     private javax.swing.JButton btnf5c1;
     private javax.swing.JButton btnf5c2;
+    private javax.swing.JButton btnf5c3;
+    private javax.swing.JButton btnf5c4;
+    private javax.swing.JButton btnf5c5;
+    private javax.swing.JButton btnf5c6;
+    private javax.swing.JButton btnf5c7;
+    private javax.swing.JButton btnf5c8;
     private javax.swing.JButton btnf6c1;
     private javax.swing.JButton btnf6c2;
+    private javax.swing.JButton btnf6c3;
+    private javax.swing.JButton btnf6c4;
+    private javax.swing.JButton btnf6c5;
+    private javax.swing.JButton btnf6c6;
+    private javax.swing.JButton btnf6c7;
+    private javax.swing.JButton btnf6c8;
     private javax.swing.JButton btnf7c1;
     private javax.swing.JButton btnf7c2;
+    private javax.swing.JButton btnf7c3;
+    private javax.swing.JButton btnf7c4;
+    private javax.swing.JButton btnf7c5;
+    private javax.swing.JButton btnf7c6;
+    private javax.swing.JButton btnf7c7;
+    private javax.swing.JButton btnf7c8;
     private javax.swing.JButton btnf8c1;
     private javax.swing.JButton btnf8c2;
+    private javax.swing.JButton btnf8c3;
+    private javax.swing.JButton btnf8c4;
+    private javax.swing.JButton btnf8c5;
+    private javax.swing.JButton btnf8c6;
+    private javax.swing.JButton btnf8c7;
+    private javax.swing.JButton btnf8c8;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
