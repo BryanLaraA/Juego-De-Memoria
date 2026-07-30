@@ -5,7 +5,7 @@ package cartas;
 public class Carta {
     
     private boolean estado;
-    private int nombre;
+    private int id;
     private boolean emparejada;
 
     public boolean isEstado() {
@@ -13,7 +13,7 @@ public class Carta {
     }
 
     public int getNombre() {
-        return nombre;
+        return id;
     }
 
     public boolean isEmparejada() {
@@ -24,8 +24,8 @@ public class Carta {
         this.estado = estado;
     }
 
-    public void setNombre(int nombre) {
-        this.nombre = nombre;
+    public void setNombre(int id) {
+        this.id = id;
     }
 
     public void setEmparejada(boolean emparejada) {
@@ -35,8 +35,8 @@ public class Carta {
     public void setVisible(boolean estado){
     }
     
-    public Carta(int nombre) {
-        this.nombre = nombre;
+    public Carta(int id) {
+        this.id = id;
         this.estado = false;
         this.emparejada = false;
     }
