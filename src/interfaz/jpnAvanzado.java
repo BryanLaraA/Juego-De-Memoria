@@ -167,6 +167,7 @@ botones[63] = btnf8c8;
 
         btnf1c7.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf1c7.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf1c7.addActionListener(this::btnf1c7ActionPerformed);
 
         btnf1c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf1c2.setMinimumSize(new java.awt.Dimension(63, 5));
@@ -174,15 +175,19 @@ botones[63] = btnf8c8;
 
         btnf1c5.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf1c5.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf1c5.addActionListener(this::btnf1c5ActionPerformed);
 
         btnf1c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf1c1.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf1c1.addActionListener(this::btnf1c1ActionPerformed);
 
         btnf1c3.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf1c3.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf1c3.addActionListener(this::btnf1c3ActionPerformed);
 
         btnf1c6.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf1c6.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf1c6.addActionListener(this::btnf1c6ActionPerformed);
 
         btnf1c4.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf1c4.setMinimumSize(new java.awt.Dimension(63, 5));
@@ -190,12 +195,15 @@ botones[63] = btnf8c8;
 
         btnf1c8.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf1c8.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf1c8.addActionListener(this::btnf1c8ActionPerformed);
 
         btnf2c4.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf2c4.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf2c4.addActionListener(this::btnf2c4ActionPerformed);
 
         btnf2c7.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf2c7.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf2c7.addActionListener(this::btnf2c7ActionPerformed);
 
         btnf2c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf2c2.setMinimumSize(new java.awt.Dimension(63, 5));
@@ -203,24 +211,31 @@ botones[63] = btnf8c8;
 
         btnf2c8.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf2c8.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf2c8.addActionListener(this::btnf2c8ActionPerformed);
 
         btnf2c5.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf2c5.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf2c5.addActionListener(this::btnf2c5ActionPerformed);
 
         btnf2c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf2c1.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf2c1.addActionListener(this::btnf2c1ActionPerformed);
 
         btnf2c3.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf2c3.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf2c3.addActionListener(this::btnf2c3ActionPerformed);
 
         btnf2c6.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf2c6.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf2c6.addActionListener(this::btnf2c6ActionPerformed);
 
         btnf3c4.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf3c4.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf3c4.addActionListener(this::btnf3c4ActionPerformed);
 
         btnf3c7.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf3c7.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf3c7.addActionListener(this::btnf3c7ActionPerformed);
 
         btnf3c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf3c2.setMinimumSize(new java.awt.Dimension(63, 5));
@@ -228,21 +243,27 @@ botones[63] = btnf8c8;
 
         btnf3c8.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf3c8.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf3c8.addActionListener(this::btnf3c8ActionPerformed);
 
         btnf3c5.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf3c5.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf3c5.addActionListener(this::btnf3c5ActionPerformed);
 
         btnf3c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf3c1.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf3c1.addActionListener(this::btnf3c1ActionPerformed);
 
         btnf4c4.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf4c4.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf4c4.addActionListener(this::btnf4c4ActionPerformed);
 
         btnf3c3.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf3c3.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf3c3.addActionListener(this::btnf3c3ActionPerformed);
 
         btnf4c7.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf4c7.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf4c7.addActionListener(this::btnf4c7ActionPerformed);
 
         btnf4c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf4c2.setMinimumSize(new java.awt.Dimension(63, 5));
@@ -250,21 +271,27 @@ botones[63] = btnf8c8;
 
         btnf4c8.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf4c8.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf4c8.addActionListener(this::btnf4c8ActionPerformed);
 
         btnf4c5.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf4c5.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf4c5.addActionListener(this::btnf4c5ActionPerformed);
 
         btnf4c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf4c1.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf4c1.addActionListener(this::btnf4c1ActionPerformed);
 
         btnf4c3.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf4c3.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf4c3.addActionListener(this::btnf4c3ActionPerformed);
 
         btnf4c6.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf4c6.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf4c6.addActionListener(this::btnf4c6ActionPerformed);
 
         btnf3c6.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf3c6.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf3c6.addActionListener(this::btnf3c6ActionPerformed);
 
         btnf7c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf7c2.setMinimumSize(new java.awt.Dimension(63, 5));
@@ -272,24 +299,31 @@ botones[63] = btnf8c8;
 
         btnf7c8.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf7c8.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf7c8.addActionListener(this::btnf7c8ActionPerformed);
 
         btnf7c5.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf7c5.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf7c5.addActionListener(this::btnf7c5ActionPerformed);
 
         btnf7c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf7c1.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf7c1.addActionListener(this::btnf7c1ActionPerformed);
 
         btnf8c4.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf8c4.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf8c4.addActionListener(this::btnf8c4ActionPerformed);
 
         btnf7c3.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf7c3.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf7c3.addActionListener(this::btnf7c3ActionPerformed);
 
         btnf5c4.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf5c4.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf5c4.addActionListener(this::btnf5c4ActionPerformed);
 
         btnf8c7.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf8c7.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf8c7.addActionListener(this::btnf8c7ActionPerformed);
 
         btnf8c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf8c2.setMinimumSize(new java.awt.Dimension(63, 5));
@@ -297,9 +331,11 @@ botones[63] = btnf8c8;
 
         btnf8c8.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf8c8.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf8c8.addActionListener(this::btnf8c8ActionPerformed);
 
         btnf5c7.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf5c7.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf5c7.addActionListener(this::btnf5c7ActionPerformed);
 
         btnf5c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf5c2.setMinimumSize(new java.awt.Dimension(63, 5));
@@ -307,30 +343,39 @@ botones[63] = btnf8c8;
 
         btnf5c8.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf5c8.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf5c8.addActionListener(this::btnf5c8ActionPerformed);
 
         btnf5c5.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf5c5.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf5c5.addActionListener(this::btnf5c5ActionPerformed);
 
         btnf5c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf5c1.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf5c1.addActionListener(this::btnf5c1ActionPerformed);
 
         btnf6c4.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf6c4.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf6c4.addActionListener(this::btnf6c4ActionPerformed);
 
         btnf5c3.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf5c3.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf5c3.addActionListener(this::btnf5c3ActionPerformed);
 
         btnf8c5.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf8c5.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf8c5.addActionListener(this::btnf8c5ActionPerformed);
 
         btnf8c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf8c1.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf8c1.addActionListener(this::btnf8c1ActionPerformed);
 
         btnf6c7.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf6c7.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf6c7.addActionListener(this::btnf6c7ActionPerformed);
 
         btnf8c3.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf8c3.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf8c3.addActionListener(this::btnf8c3ActionPerformed);
 
         btnf6c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf6c2.setMinimumSize(new java.awt.Dimension(63, 5));
@@ -338,33 +383,43 @@ botones[63] = btnf8c8;
 
         btnf8c6.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf8c6.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf8c6.addActionListener(this::btnf8c6ActionPerformed);
 
         btnf6c8.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf6c8.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf6c8.addActionListener(this::btnf6c8ActionPerformed);
 
         btnf7c6.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf7c6.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf7c6.addActionListener(this::btnf7c6ActionPerformed);
 
         btnf6c5.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf6c5.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf6c5.addActionListener(this::btnf6c5ActionPerformed);
 
         btnf6c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf6c1.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf6c1.addActionListener(this::btnf6c1ActionPerformed);
 
         btnf6c3.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf6c3.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf6c3.addActionListener(this::btnf6c3ActionPerformed);
 
         btnf6c6.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf6c6.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf6c6.addActionListener(this::btnf6c6ActionPerformed);
 
         btnf7c4.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf7c4.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf7c4.addActionListener(this::btnf7c4ActionPerformed);
 
         btnf7c7.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf7c7.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf7c7.addActionListener(this::btnf7c7ActionPerformed);
 
         btnf5c6.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf5c6.setMinimumSize(new java.awt.Dimension(63, 5));
+        btnf5c6.addActionListener(this::btnf5c6ActionPerformed);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -618,40 +673,260 @@ botones[63] = btnf8c8;
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnf1c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c2ActionPerformed
-        // TODO add your handling code here:
+        juego.seleccionarCarta(0,1);
     }//GEN-LAST:event_btnf1c2ActionPerformed
 
     private void btnf2c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c2ActionPerformed
-        // TODO add your handling code here:
+        juego.seleccionarCarta(1,1);
     }//GEN-LAST:event_btnf2c2ActionPerformed
 
     private void btnf3c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c2ActionPerformed
-        // TODO add your handling code here:
+        juego.seleccionarCarta(2,1);
     }//GEN-LAST:event_btnf3c2ActionPerformed
 
     private void btnf4c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c2ActionPerformed
-        // TODO add your handling code here:
+        juego.seleccionarCarta(3,1);
     }//GEN-LAST:event_btnf4c2ActionPerformed
 
     private void btnf7c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf7c2ActionPerformed
-        // TODO add your handling code here:
+        juego.seleccionarCarta(6,1);
     }//GEN-LAST:event_btnf7c2ActionPerformed
 
     private void btnf8c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf8c2ActionPerformed
-        // TODO add your handling code here:
+        juego.seleccionarCarta(7,1);
     }//GEN-LAST:event_btnf8c2ActionPerformed
 
     private void btnf5c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf5c2ActionPerformed
-        // TODO add your handling code here:
+        juego.seleccionarCarta(4,1);
     }//GEN-LAST:event_btnf5c2ActionPerformed
 
     private void btnf6c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf6c2ActionPerformed
-        // TODO add your handling code here:
+        juego.seleccionarCarta(5,1);
     }//GEN-LAST:event_btnf6c2ActionPerformed
 
     private void btnf1c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c4ActionPerformed
-        // TODO add your handling code here:
+        juego.seleccionarCarta(0,3);
     }//GEN-LAST:event_btnf1c4ActionPerformed
+
+    private void btnf1c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c1ActionPerformed
+        juego.seleccionarCarta(0,0);
+    }//GEN-LAST:event_btnf1c1ActionPerformed
+
+    private void btnf1c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c3ActionPerformed
+        juego.seleccionarCarta(0,2);
+    }//GEN-LAST:event_btnf1c3ActionPerformed
+
+    private void btnf1c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c5ActionPerformed
+        juego.seleccionarCarta(0,4);
+    }//GEN-LAST:event_btnf1c5ActionPerformed
+
+    private void btnf1c6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c6ActionPerformed
+        juego.seleccionarCarta(0,4);
+    }//GEN-LAST:event_btnf1c6ActionPerformed
+
+    private void btnf1c7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c7ActionPerformed
+        juego.seleccionarCarta(0,5);
+    }//GEN-LAST:event_btnf1c7ActionPerformed
+
+    private void btnf1c8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c8ActionPerformed
+        juego.seleccionarCarta(0,6);
+    }//GEN-LAST:event_btnf1c8ActionPerformed
+
+    private void btnf2c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c1ActionPerformed
+        juego.seleccionarCarta(1,0);
+    }//GEN-LAST:event_btnf2c1ActionPerformed
+
+    private void btnf2c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c3ActionPerformed
+        juego.seleccionarCarta(1,2);
+    }//GEN-LAST:event_btnf2c3ActionPerformed
+
+    private void btnf2c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c4ActionPerformed
+        juego.seleccionarCarta(1,3);        // TODO add your handling code here:
+    }//GEN-LAST:event_btnf2c4ActionPerformed
+
+    private void btnf2c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c5ActionPerformed
+        juego.seleccionarCarta(1,4);
+    }//GEN-LAST:event_btnf2c5ActionPerformed
+
+    private void btnf2c6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c6ActionPerformed
+        juego.seleccionarCarta(1,5);
+    }//GEN-LAST:event_btnf2c6ActionPerformed
+
+    private void btnf2c7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c7ActionPerformed
+        juego.seleccionarCarta(1,6);
+    }//GEN-LAST:event_btnf2c7ActionPerformed
+
+    private void btnf2c8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c8ActionPerformed
+        juego.seleccionarCarta(1,7);
+    }//GEN-LAST:event_btnf2c8ActionPerformed
+
+    private void btnf3c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c1ActionPerformed
+        juego.seleccionarCarta(2,0);
+    }//GEN-LAST:event_btnf3c1ActionPerformed
+
+    private void btnf3c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c3ActionPerformed
+        juego.seleccionarCarta(2,2);
+    }//GEN-LAST:event_btnf3c3ActionPerformed
+
+    private void btnf3c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c4ActionPerformed
+        juego.seleccionarCarta(2,3);
+    }//GEN-LAST:event_btnf3c4ActionPerformed
+
+    private void btnf3c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c5ActionPerformed
+        juego.seleccionarCarta(2,4);
+    }//GEN-LAST:event_btnf3c5ActionPerformed
+
+    private void btnf3c6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c6ActionPerformed
+        juego.seleccionarCarta(2,5);
+    }//GEN-LAST:event_btnf3c6ActionPerformed
+
+    private void btnf3c7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c7ActionPerformed
+        juego.seleccionarCarta(2,6);
+    }//GEN-LAST:event_btnf3c7ActionPerformed
+
+    private void btnf3c8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c8ActionPerformed
+        juego.seleccionarCarta(2,7);
+    }//GEN-LAST:event_btnf3c8ActionPerformed
+
+    private void btnf4c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c1ActionPerformed
+        juego.seleccionarCarta(3,0);
+    }//GEN-LAST:event_btnf4c1ActionPerformed
+
+    private void btnf4c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c3ActionPerformed
+        juego.seleccionarCarta(3,2);
+    }//GEN-LAST:event_btnf4c3ActionPerformed
+
+    private void btnf4c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c4ActionPerformed
+        juego.seleccionarCarta(3,3);
+    }//GEN-LAST:event_btnf4c4ActionPerformed
+
+    private void btnf4c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c5ActionPerformed
+        juego.seleccionarCarta(3,4);
+    }//GEN-LAST:event_btnf4c5ActionPerformed
+
+    private void btnf4c6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c6ActionPerformed
+        juego.seleccionarCarta(3,5);
+    }//GEN-LAST:event_btnf4c6ActionPerformed
+
+    private void btnf4c7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c7ActionPerformed
+        juego.seleccionarCarta(3,6);
+    }//GEN-LAST:event_btnf4c7ActionPerformed
+
+    private void btnf4c8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c8ActionPerformed
+        juego.seleccionarCarta(3,7);
+    }//GEN-LAST:event_btnf4c8ActionPerformed
+
+    private void btnf5c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf5c1ActionPerformed
+        juego.seleccionarCarta(4,0);
+    }//GEN-LAST:event_btnf5c1ActionPerformed
+
+    private void btnf5c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf5c3ActionPerformed
+        juego.seleccionarCarta(4,2);
+    }//GEN-LAST:event_btnf5c3ActionPerformed
+
+    private void btnf5c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf5c4ActionPerformed
+        juego.seleccionarCarta(4,3);
+    }//GEN-LAST:event_btnf5c4ActionPerformed
+
+    private void btnf5c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf5c5ActionPerformed
+        juego.seleccionarCarta(4,4);
+    }//GEN-LAST:event_btnf5c5ActionPerformed
+
+    private void btnf5c6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf5c6ActionPerformed
+        juego.seleccionarCarta(4,5);
+    }//GEN-LAST:event_btnf5c6ActionPerformed
+
+    private void btnf5c7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf5c7ActionPerformed
+        juego.seleccionarCarta(4,6);
+    }//GEN-LAST:event_btnf5c7ActionPerformed
+
+    private void btnf5c8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf5c8ActionPerformed
+        juego.seleccionarCarta(4,7);
+    }//GEN-LAST:event_btnf5c8ActionPerformed
+
+    private void btnf6c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf6c1ActionPerformed
+        juego.seleccionarCarta(5,0);
+    }//GEN-LAST:event_btnf6c1ActionPerformed
+
+    private void btnf6c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf6c3ActionPerformed
+        juego.seleccionarCarta(5,2);
+    }//GEN-LAST:event_btnf6c3ActionPerformed
+
+    private void btnf6c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf6c4ActionPerformed
+        juego.seleccionarCarta(5,3);
+    }//GEN-LAST:event_btnf6c4ActionPerformed
+
+    private void btnf6c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf6c5ActionPerformed
+        juego.seleccionarCarta(5,4);
+    }//GEN-LAST:event_btnf6c5ActionPerformed
+
+    private void btnf6c6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf6c6ActionPerformed
+        juego.seleccionarCarta(5,5);
+    }//GEN-LAST:event_btnf6c6ActionPerformed
+
+    private void btnf6c7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf6c7ActionPerformed
+        juego.seleccionarCarta(5,6);
+    }//GEN-LAST:event_btnf6c7ActionPerformed
+
+    private void btnf6c8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf6c8ActionPerformed
+        juego.seleccionarCarta(5,7);
+    }//GEN-LAST:event_btnf6c8ActionPerformed
+
+    private void btnf7c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf7c1ActionPerformed
+        juego.seleccionarCarta(6,0);
+    }//GEN-LAST:event_btnf7c1ActionPerformed
+
+    private void btnf7c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf7c3ActionPerformed
+        juego.seleccionarCarta(6,2);
+    }//GEN-LAST:event_btnf7c3ActionPerformed
+
+    private void btnf7c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf7c4ActionPerformed
+        juego.seleccionarCarta(6,3);
+    }//GEN-LAST:event_btnf7c4ActionPerformed
+
+    private void btnf7c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf7c5ActionPerformed
+        juego.seleccionarCarta(6,4);
+    }//GEN-LAST:event_btnf7c5ActionPerformed
+
+    private void btnf7c6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf7c6ActionPerformed
+        juego.seleccionarCarta(6,5);
+    }//GEN-LAST:event_btnf7c6ActionPerformed
+
+    private void btnf7c7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf7c7ActionPerformed
+        juego.seleccionarCarta(6,6);
+    }//GEN-LAST:event_btnf7c7ActionPerformed
+
+    private void btnf7c8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf7c8ActionPerformed
+        juego.seleccionarCarta(6,7);
+    }//GEN-LAST:event_btnf7c8ActionPerformed
+
+    private void btnf8c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf8c1ActionPerformed
+        juego.seleccionarCarta(7,0);
+    }//GEN-LAST:event_btnf8c1ActionPerformed
+
+    private void btnf8c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf8c3ActionPerformed
+        juego.seleccionarCarta(7,2);
+    }//GEN-LAST:event_btnf8c3ActionPerformed
+
+    private void btnf8c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf8c4ActionPerformed
+        juego.seleccionarCarta(7,3);
+    }//GEN-LAST:event_btnf8c4ActionPerformed
+
+    private void btnf8c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf8c5ActionPerformed
+        juego.seleccionarCarta(7,4);
+    }//GEN-LAST:event_btnf8c5ActionPerformed
+
+    private void btnf8c6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf8c6ActionPerformed
+        juego.seleccionarCarta(7,5);
+    }//GEN-LAST:event_btnf8c6ActionPerformed
+
+    private void btnf8c7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf8c7ActionPerformed
+        juego.seleccionarCarta(7,6);
+    }//GEN-LAST:event_btnf8c7ActionPerformed
+
+    private void btnf8c8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf8c8ActionPerformed
+        juego.seleccionarCarta(7,7);
+    }//GEN-LAST:event_btnf8c8ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
