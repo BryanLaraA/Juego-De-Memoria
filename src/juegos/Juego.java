@@ -11,6 +11,7 @@ public class Juego {
     private Tablero tablero;
     private Jugador jugador;
     private Nivel nivel;
+    private boolean bloqueado;
 
     private Carta primeraCarta;
     private Carta segundaCarta;
@@ -31,6 +32,7 @@ public class Juego {
         this.nivel = nivel;
         this.tablero = new Tablero(nivel);
         this.jugador = new Jugador();
+        this.bloqueado = false;
 
         primeraCarta = null;
         segundaCarta = null;
@@ -41,9 +43,13 @@ public class Juego {
         jugador = new Jugador();
         primeraCarta = null;
         segundaCarta = null;
+        bloqueado = false;
     }
 
     public void seleccionarCarta(int fila, int columna) {
+        if (bloqueado) {
+            return;
+        }
         Carta carta = tablero.obtenerCarta(fila, columna);
 
         if (carta.isEmparejada() || carta.isEstado()) {
@@ -55,6 +61,7 @@ public class Juego {
             primeraCarta = carta;
         } else {
             segundaCarta = carta;
+            bloqueado = true;
             verificarPareja();
         }
     }
@@ -66,19 +73,21 @@ public class Juego {
             segundaCarta.setEmparejada(true);
             jugador.incrementparejas();
             jugador.incrementScore();
+            bloqueado = false;
         } else {
             jugador.LowerScore();
             Carta carta1 = primeraCarta;
             Carta carta2 = segundaCarta;
             Timer timer = new Timer(2000, e -> {
-                carta1.setVisible(false);
-                carta2.setVisible(false);
+            carta1.setVisible(false);
+            carta2.setVisible(false);
+            bloqueado = false;
             });
             timer.setRepeats(false);
             timer.start();
         }
-        primeraCarta = null;
-        segundaCarta = null;
+            primeraCarta = null;
+            segundaCarta = null;
         if (tablero.juegoFinalizado()) {
             finalizarJuego();
         }
