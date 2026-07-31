@@ -3,8 +3,10 @@ package controladores;
 import cronometros.Cronometro;
 import interfaz.frmJuego;
 import interfaz.frmMenu;
+import javax.swing.JOptionPane;
 import juegos.Juego;
 import niveles.Nivel;
+import jugadores.Jugador;
 
 public class ControladorJuego {
 
@@ -18,10 +20,10 @@ public class ControladorJuego {
         this.frmmenu = frmmenu;
         this.cronometro = cronometro;
         this.juego = juego;
+        
     }
 
     public void iniciarJuego(Nivel nivel) {
-        juego = new Juego(nivel);
         cronometro.reiniciar();
         cronometro.iniciar();
     }
@@ -29,7 +31,15 @@ public class ControladorJuego {
     public void seleccionarCarta(int fila, int columna) {
         juego.seleccionarCarta(fila, columna);
         frmjuego.actualizarInfo();
+        if(juego.getTablero().juegoFinalizado()){
+            frmJuego.finalizarJuego(juego.getJugador());
+        }
     }
+        
+
+    
+        
+    
 
     public void nuevaPartida() {
         juego.nuevaPartida();
