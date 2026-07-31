@@ -44,6 +44,17 @@ public class jpnFacil extends javax.swing.JPanel {
     
     public void actualizarTablero(){
         Carta [][] cartas = juego.getTablero().getTablero();
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
+                int indice = i* 4 +j;
+                Carta carta = cartas[i][j];
+                if (carta.isEstado() || carta.isEmparejada()){
+                    botones[indice].setText(String.valueOf(carta.getNombre()));
+                }else 
+                    botones[indice].setText("A");
+            }
+            
+        }
     }
 
     /**
@@ -192,6 +203,7 @@ public class jpnFacil extends javax.swing.JPanel {
 
     private void btnf1c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c1ActionPerformed
         juego.seleccionarCarta(0,0);
+        actualizarTablero();
     }//GEN-LAST:event_btnf1c1ActionPerformed
 
     private void btnf2c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c3ActionPerformed
