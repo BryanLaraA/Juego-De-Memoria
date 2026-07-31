@@ -28,6 +28,7 @@ public class ControladorJuego {
 
     public void seleccionarCarta(int fila, int columna) {
         juego.seleccionarCarta(fila, columna);
+        frmjuego.actualizarInfo();
     }
 
     public void nuevaPartida() {

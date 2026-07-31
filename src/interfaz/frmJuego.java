@@ -52,7 +52,7 @@ public class frmJuego extends javax.swing.JFrame {
         mostrarJuego(panel);
     }
  
-    private void actualizarInfo() {
+    public void actualizarInfo() {
         lblScore.setText("Puntaje: " + controlador.getJuego().getJugador().getScore());
         lblIntentos.setText("Intentos: " + controlador.getJuego().getJugador().getAttempts());
     }
