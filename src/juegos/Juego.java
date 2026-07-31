@@ -15,6 +15,8 @@ public class Juego {
     private Carta primeraCarta;
     private Carta segundaCarta;
 
+    private Runnable actualizarVista;
+
     public Juego(Nivel nivel) {
         this.nivel = nivel;
         this.tablero = new Tablero(nivel);
@@ -33,12 +35,14 @@ public class Juego {
 
     public void seleccionarCarta(int fila, int columna) {
         Carta carta = tablero.obtenerCarta(fila, columna);
+
         if (carta.isEmparejada() || carta.isEstado()) {
             return;
         }
         carta.setVisible(true);
 
         if (primeraCarta == null) {
+
             primeraCarta = carta;
         } else {
             segundaCarta = carta;
@@ -57,6 +61,10 @@ public class Juego {
             jugador.incrementparejas();
             jugador.incrementScore();
 
+            if (actualizarVista != null) {
+                actualizarVista.run();
+            }
+
         } else {
 
             jugador.LowerScore();
@@ -65,11 +73,17 @@ public class Juego {
             Carta carta2 = segundaCarta;
 
             Timer timer = new Timer(2000, e -> {
+
                 carta1.setVisible(false);
                 carta2.setVisible(false);
+
+                if (actualizarVista != null) {
+                    actualizarVista.run();
+                }
             });
 
             timer.setRepeats(false);
+
             timer.start();
         }
 
@@ -92,6 +106,10 @@ public class Juego {
     public void cambiarNivel(Nivel nivel) {
         this.nivel = nivel;
         nuevaPartida();
+    }
+
+    public void setActualizarVista(Runnable actualizarVista) {
+        this.actualizarVista = actualizarVista;
     }
 
     public Tablero getTablero() {
