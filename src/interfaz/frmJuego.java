@@ -180,7 +180,8 @@ public class frmJuego extends javax.swing.JFrame {
     }//GEN-LAST:event_btnMenuActionPerformed
 
     private void btnReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReiniciarActionPerformed
-     controlador.nuevaPartida();
+        controlador.nuevaPartida();
+        actualizarInfo();
         lblTimer.setText("0:00");
     }//GEN-LAST:event_btnReiniciarActionPerformed
 

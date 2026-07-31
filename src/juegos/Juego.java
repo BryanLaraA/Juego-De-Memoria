@@ -33,7 +33,6 @@ public class Juego {
         this.tablero = new Tablero(nivel);
         this.jugador = new Jugador();
         this.bloqueado = false;
-
         primeraCarta = null;
         segundaCarta = null;
     }
