@@ -177,6 +177,8 @@ botones[63] = btnf8c8;
         btnf1c5.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf1c5.addActionListener(this::btnf1c5ActionPerformed);
 
+        btnf1c1.setToolTipText("");
+        btnf1c1.setActionCommand("");
         btnf1c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf1c1.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf1c1.addActionListener(this::btnf1c1ActionPerformed);
