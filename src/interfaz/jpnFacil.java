@@ -6,6 +6,7 @@ package interfaz;
 
 import cartas.Carta;
 import controladores.ControladorJuego;
+import java.awt.Font;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.Timer;
@@ -66,6 +67,7 @@ public class jpnFacil extends javax.swing.JPanel {
         
         for (JButton boton : botones){
             boton.setIcon(dorsoIcon);
+            boton.setFont(new Font("Segoe UI Emoji",Font.PLAIN,20));
         }
     }
    
