@@ -45,9 +45,7 @@ public class frmJuego extends javax.swing.JFrame {
         this.nivelActual = nivel;
         juego = new Juego(nivel);
         
-        lblScore.setText("Puntaje: " + juego.getJugador().getScore());
-        lblIntentos.setText("Intentos: " + juego.getJugador().getAttempts());
-
+        actualizarInfo();
         JPanel panel;
         switch (nivel.getParejas()) {
             case 8 ->
@@ -61,6 +59,11 @@ public class frmJuego extends javax.swing.JFrame {
         }
         mostrarJuego(panel);
 
+    }
+    
+    private void actualizarInfo() {
+        lblScore.setText("Puntaje: " + juego.getJugador().getScore());
+        lblIntentos.setText("Intentos: " + juego.getJugador().getAttempts());
     }
 
     private void mostrarJuego(JPanel panel) {
