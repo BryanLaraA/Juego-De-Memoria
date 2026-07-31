@@ -49,10 +49,7 @@ public class jpnFacil extends javax.swing.JPanel {
      Timer refresco = new Timer(200, e -> actualizarTablero());
         refresco.start();
     }
-    
-    
-    
-    
+   
     public void actualizarTablero(){
         Carta [][] cartas = controlador.getJuego().getTablero().getTablero();
         for (int i = 0; i < 4; i++) {
@@ -60,15 +57,12 @@ public class jpnFacil extends javax.swing.JPanel {
                 int indice = i* 4 +j;
                 Carta carta = cartas[i][j];
                 if (carta.isEstado() || carta.isEmparejada()){
-                    
-                    botones[indice].setText(emojis[carta.getNombre()-1]);
-                    
+                    botones[indice].setText(emojis[carta.getNombre()-1]);                   
                 }else{
                     botones[indice].setText("?");
                 }
                 botones[indice].setEnabled(!carta.isEmparejada());
-            }
-                
+            }                
         }
     }
 

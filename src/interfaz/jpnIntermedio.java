@@ -35,7 +35,6 @@ public class jpnIntermedio extends javax.swing.JPanel {
         initComponents();
 
         this.controlador = controlador;
-
         botones[0] = btnf1c1;
         botones[1] = btnf1c2;
         botones[2] = btnf1c3;
@@ -74,9 +73,7 @@ public class jpnIntermedio extends javax.swing.JPanel {
     }
 
     public void actualizarTablero() {
-
         Carta[][] cartas = controlador.getJuego().getTablero().getTablero();
-
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 8; j++) {
                 int indice = i * 8 + j;
