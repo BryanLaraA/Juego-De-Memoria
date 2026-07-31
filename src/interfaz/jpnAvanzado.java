@@ -16,7 +16,7 @@ import juegos.Juego;
  */
 public class jpnAvanzado extends javax.swing.JPanel {
 
-     private ControladorJuego controlador;
+    private ControladorJuego controlador;
     JButton[] botones = new JButton[64];
     private Juego juego;
 
@@ -103,7 +103,7 @@ public class jpnAvanzado extends javax.swing.JPanel {
         botones[61] = btnf8c6;
         botones[62] = btnf8c7;
         botones[63] = btnf8c8;
-        
+
         Timer refresco = new Timer(200, e -> actualizarTablero());
         refresco.start();
     }
@@ -113,16 +113,26 @@ public class jpnAvanzado extends javax.swing.JPanel {
         Carta[][] cartas = controlador.getJuego().getTablero().getTablero();
 
         for (int i = 0; i < 8; i++) {
+
             for (int j = 0; j < 8; j++) {
+
                 int indice = i * 8 + j;
+
                 Carta carta = cartas[i][j];
+
                 if (carta.isEstado() || carta.isEmparejada()) {
+
                     botones[indice].setText(
-                            emojis[carta.getNombre() - 1]);
+                            emojis[carta.getNombre() - 1]
+                    );
+
                 } else {
+
                     botones[indice].setText("?");
                 }
-                botones[indice].setEnabled(!carta.isEmparejada()
+
+                botones[indice].setEnabled(
+                        !carta.isEmparejada()
                 );
             }
         }
@@ -715,322 +725,332 @@ public class jpnAvanzado extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnf1c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c2ActionPerformed
-        juego.seleccionarCarta(0, 1);
+        controlador.seleccionarCarta(0, 1);
         actualizarTablero();
     }//GEN-LAST:event_btnf1c2ActionPerformed
 
     private void btnf2c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c2ActionPerformed
-        juego.seleccionarCarta(1, 1);
+
+        controlador.seleccionarCarta(1, 1);
         actualizarTablero();
     }//GEN-LAST:event_btnf2c2ActionPerformed
 
     private void btnf3c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c2ActionPerformed
-        juego.seleccionarCarta(2, 1);
+
+        controlador.seleccionarCarta(2, 1);
         actualizarTablero();
     }//GEN-LAST:event_btnf3c2ActionPerformed
 
     private void btnf4c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c2ActionPerformed
-        juego.seleccionarCarta(3, 1);
+
+        controlador.seleccionarCarta(3, 1);
         actualizarTablero();
     }//GEN-LAST:event_btnf4c2ActionPerformed
 
     private void btnf7c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf7c2ActionPerformed
-        juego.seleccionarCarta(6, 1);
+
+        controlador.seleccionarCarta(6, 1);
         actualizarTablero();
     }//GEN-LAST:event_btnf7c2ActionPerformed
 
     private void btnf8c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf8c2ActionPerformed
-        juego.seleccionarCarta(7, 1);
+
+        controlador.seleccionarCarta(7, 1);
         actualizarTablero();
     }//GEN-LAST:event_btnf8c2ActionPerformed
 
     private void btnf5c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf5c2ActionPerformed
-        juego.seleccionarCarta(4, 1);
+
+        controlador.seleccionarCarta(4, 1);
         actualizarTablero();
     }//GEN-LAST:event_btnf5c2ActionPerformed
 
     private void btnf6c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf6c2ActionPerformed
-        juego.seleccionarCarta(5, 1);
+
+        controlador.seleccionarCarta(5, 1);
         actualizarTablero();
     }//GEN-LAST:event_btnf6c2ActionPerformed
 
     private void btnf1c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c4ActionPerformed
-        juego.seleccionarCarta(0, 3);
+
+        controlador.seleccionarCarta(0, 3);
         actualizarTablero();
     }//GEN-LAST:event_btnf1c4ActionPerformed
 
     private void btnf1c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c1ActionPerformed
-        juego.seleccionarCarta(0, 0);
+
+        controlador.seleccionarCarta(0, 0);
         actualizarTablero();
     }//GEN-LAST:event_btnf1c1ActionPerformed
 
     private void btnf1c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c3ActionPerformed
-        juego.seleccionarCarta(0, 2);
+
+        controlador.seleccionarCarta(0, 2);
         actualizarTablero();
     }//GEN-LAST:event_btnf1c3ActionPerformed
 
     private void btnf1c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c5ActionPerformed
-        juego.seleccionarCarta(0, 4);
+        controlador.seleccionarCarta(0, 4);
         actualizarTablero();
     }//GEN-LAST:event_btnf1c5ActionPerformed
 
     private void btnf1c6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c6ActionPerformed
-        juego.seleccionarCarta(0, 4);
+        controlador.seleccionarCarta(0, 5);
         actualizarTablero();
     }//GEN-LAST:event_btnf1c6ActionPerformed
 
     private void btnf1c7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c7ActionPerformed
-        juego.seleccionarCarta(0, 5);
+        controlador.seleccionarCarta(0, 6);
         actualizarTablero();
     }//GEN-LAST:event_btnf1c7ActionPerformed
 
     private void btnf1c8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c8ActionPerformed
-        juego.seleccionarCarta(0, 6);
+        controlador.seleccionarCarta(0, 7);
         actualizarTablero();
     }//GEN-LAST:event_btnf1c8ActionPerformed
 
     private void btnf2c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c1ActionPerformed
-        juego.seleccionarCarta(1, 0);
+        controlador.seleccionarCarta(1, 0);
         actualizarTablero();
     }//GEN-LAST:event_btnf2c1ActionPerformed
 
     private void btnf2c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c3ActionPerformed
-        juego.seleccionarCarta(1, 2);
+        controlador.seleccionarCarta(1, 2);
         actualizarTablero();
     }//GEN-LAST:event_btnf2c3ActionPerformed
 
     private void btnf2c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c4ActionPerformed
-        juego.seleccionarCarta(1, 3);
+        controlador.seleccionarCarta(1, 4);
         actualizarTablero();
     }//GEN-LAST:event_btnf2c4ActionPerformed
 
     private void btnf2c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c5ActionPerformed
-        juego.seleccionarCarta(1, 4);
+        controlador.seleccionarCarta(1, 4);
         actualizarTablero();
     }//GEN-LAST:event_btnf2c5ActionPerformed
 
     private void btnf2c6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c6ActionPerformed
-        juego.seleccionarCarta(1, 5);
+        controlador.seleccionarCarta(1, 5);
         actualizarTablero();
     }//GEN-LAST:event_btnf2c6ActionPerformed
 
     private void btnf2c7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c7ActionPerformed
-        juego.seleccionarCarta(1, 6);
+        controlador.seleccionarCarta(1, 6);
         actualizarTablero();
     }//GEN-LAST:event_btnf2c7ActionPerformed
 
     private void btnf2c8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c8ActionPerformed
-        juego.seleccionarCarta(1, 7);
+        controlador.seleccionarCarta(1, 7);
         actualizarTablero();
     }//GEN-LAST:event_btnf2c8ActionPerformed
 
     private void btnf3c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c1ActionPerformed
-        juego.seleccionarCarta(2, 0);
+        controlador.seleccionarCarta(2, 0);
         actualizarTablero();
     }//GEN-LAST:event_btnf3c1ActionPerformed
 
     private void btnf3c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c3ActionPerformed
-        juego.seleccionarCarta(2, 2);
+        controlador.seleccionarCarta(2, 2);
         actualizarTablero();
     }//GEN-LAST:event_btnf3c3ActionPerformed
 
     private void btnf3c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c4ActionPerformed
-        juego.seleccionarCarta(2, 3);
+        controlador.seleccionarCarta(2, 3);
         actualizarTablero();
     }//GEN-LAST:event_btnf3c4ActionPerformed
 
     private void btnf3c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c5ActionPerformed
-        juego.seleccionarCarta(2, 4);
+        controlador.seleccionarCarta(2, 4);
         actualizarTablero();
     }//GEN-LAST:event_btnf3c5ActionPerformed
 
     private void btnf3c6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c6ActionPerformed
-        juego.seleccionarCarta(2, 5);
+        controlador.seleccionarCarta(2, 5);
         actualizarTablero();
     }//GEN-LAST:event_btnf3c6ActionPerformed
 
     private void btnf3c7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c7ActionPerformed
-        juego.seleccionarCarta(2, 6);
+        controlador.seleccionarCarta(2, 6);
         actualizarTablero();
     }//GEN-LAST:event_btnf3c7ActionPerformed
 
     private void btnf3c8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c8ActionPerformed
-        juego.seleccionarCarta(2, 7);
+        controlador.seleccionarCarta(2, 7);
         actualizarTablero();
     }//GEN-LAST:event_btnf3c8ActionPerformed
 
     private void btnf4c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c1ActionPerformed
-        juego.seleccionarCarta(3, 0);
+        controlador.seleccionarCarta(3, 0);
         actualizarTablero();
     }//GEN-LAST:event_btnf4c1ActionPerformed
 
     private void btnf4c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c3ActionPerformed
-        juego.seleccionarCarta(3, 2);
+        controlador.seleccionarCarta(3, 2);
         actualizarTablero();
     }//GEN-LAST:event_btnf4c3ActionPerformed
 
     private void btnf4c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c4ActionPerformed
-        juego.seleccionarCarta(3, 3);
+        controlador.seleccionarCarta(3, 3);
         actualizarTablero();
     }//GEN-LAST:event_btnf4c4ActionPerformed
 
     private void btnf4c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c5ActionPerformed
-        juego.seleccionarCarta(3, 4);
+        controlador.seleccionarCarta(3, 4);
         actualizarTablero();
     }//GEN-LAST:event_btnf4c5ActionPerformed
 
     private void btnf4c6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c6ActionPerformed
-        juego.seleccionarCarta(3, 5);
+        controlador.seleccionarCarta(3, 5);
         actualizarTablero();
     }//GEN-LAST:event_btnf4c6ActionPerformed
 
     private void btnf4c7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c7ActionPerformed
-        juego.seleccionarCarta(3, 6);
+        controlador.seleccionarCarta(3, 6);
         actualizarTablero();
     }//GEN-LAST:event_btnf4c7ActionPerformed
 
     private void btnf4c8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c8ActionPerformed
-        juego.seleccionarCarta(3, 7);
+        controlador.seleccionarCarta(3, 7);
         actualizarTablero();
     }//GEN-LAST:event_btnf4c8ActionPerformed
 
     private void btnf5c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf5c1ActionPerformed
-        juego.seleccionarCarta(4, 0);
+        controlador.seleccionarCarta(4, 0);
         actualizarTablero();
     }//GEN-LAST:event_btnf5c1ActionPerformed
 
     private void btnf5c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf5c3ActionPerformed
-        juego.seleccionarCarta(4, 2);
+        controlador.seleccionarCarta(4, 2);
         actualizarTablero();
     }//GEN-LAST:event_btnf5c3ActionPerformed
 
     private void btnf5c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf5c4ActionPerformed
-        juego.seleccionarCarta(4, 3);
+        controlador.seleccionarCarta(4, 3);
         actualizarTablero();
     }//GEN-LAST:event_btnf5c4ActionPerformed
 
     private void btnf5c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf5c5ActionPerformed
-        juego.seleccionarCarta(4, 4);
+        controlador.seleccionarCarta(4, 4);
         actualizarTablero();
     }//GEN-LAST:event_btnf5c5ActionPerformed
 
     private void btnf5c6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf5c6ActionPerformed
-        juego.seleccionarCarta(4, 5);
+        controlador.seleccionarCarta(4, 5);
         actualizarTablero();
     }//GEN-LAST:event_btnf5c6ActionPerformed
 
     private void btnf5c7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf5c7ActionPerformed
-        juego.seleccionarCarta(4, 6);
+        controlador.seleccionarCarta(4, 6);
         actualizarTablero();
     }//GEN-LAST:event_btnf5c7ActionPerformed
 
     private void btnf5c8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf5c8ActionPerformed
-        juego.seleccionarCarta(4, 7);
+        controlador.seleccionarCarta(4, 7);
         actualizarTablero();
     }//GEN-LAST:event_btnf5c8ActionPerformed
 
     private void btnf6c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf6c1ActionPerformed
-        juego.seleccionarCarta(5, 0);
+        controlador.seleccionarCarta(5, 0);
         actualizarTablero();
     }//GEN-LAST:event_btnf6c1ActionPerformed
 
     private void btnf6c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf6c3ActionPerformed
-        juego.seleccionarCarta(5, 2);
+        controlador.seleccionarCarta(5, 2);
         actualizarTablero();
     }//GEN-LAST:event_btnf6c3ActionPerformed
 
     private void btnf6c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf6c4ActionPerformed
-        juego.seleccionarCarta(5, 3);
+        controlador.seleccionarCarta(5, 3);
         actualizarTablero();
     }//GEN-LAST:event_btnf6c4ActionPerformed
 
     private void btnf6c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf6c5ActionPerformed
-        juego.seleccionarCarta(5, 4);
+        controlador.seleccionarCarta(5, 4);
         actualizarTablero();
     }//GEN-LAST:event_btnf6c5ActionPerformed
 
     private void btnf6c6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf6c6ActionPerformed
-        juego.seleccionarCarta(5, 5);
+        controlador.seleccionarCarta(5, 5);
         actualizarTablero();
     }//GEN-LAST:event_btnf6c6ActionPerformed
 
     private void btnf6c7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf6c7ActionPerformed
-        juego.seleccionarCarta(5, 6);
+        controlador.seleccionarCarta(5, 6);
         actualizarTablero();
     }//GEN-LAST:event_btnf6c7ActionPerformed
 
     private void btnf6c8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf6c8ActionPerformed
-        juego.seleccionarCarta(5, 7);
+        controlador.seleccionarCarta(5, 7);
         actualizarTablero();
     }//GEN-LAST:event_btnf6c8ActionPerformed
 
     private void btnf7c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf7c1ActionPerformed
-        juego.seleccionarCarta(6, 0);
+        controlador.seleccionarCarta(6, 0);
         actualizarTablero();
     }//GEN-LAST:event_btnf7c1ActionPerformed
 
     private void btnf7c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf7c3ActionPerformed
-        juego.seleccionarCarta(6, 2);
+        controlador.seleccionarCarta(6, 2);
         actualizarTablero();
     }//GEN-LAST:event_btnf7c3ActionPerformed
 
     private void btnf7c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf7c4ActionPerformed
-        juego.seleccionarCarta(6, 3);
+        controlador.seleccionarCarta(6, 3);
         actualizarTablero();
     }//GEN-LAST:event_btnf7c4ActionPerformed
 
     private void btnf7c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf7c5ActionPerformed
-        juego.seleccionarCarta(6, 4);
+        controlador.seleccionarCarta(6, 4);
         actualizarTablero();
     }//GEN-LAST:event_btnf7c5ActionPerformed
 
     private void btnf7c6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf7c6ActionPerformed
-        juego.seleccionarCarta(6, 5);
+        controlador.seleccionarCarta(6, 5);
         actualizarTablero();
     }//GEN-LAST:event_btnf7c6ActionPerformed
 
     private void btnf7c7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf7c7ActionPerformed
-        juego.seleccionarCarta(6, 6);
+        controlador.seleccionarCarta(6, 6);
         actualizarTablero();
     }//GEN-LAST:event_btnf7c7ActionPerformed
 
     private void btnf7c8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf7c8ActionPerformed
-        juego.seleccionarCarta(6, 7);
+        controlador.seleccionarCarta(6, 7);
         actualizarTablero();
     }//GEN-LAST:event_btnf7c8ActionPerformed
 
     private void btnf8c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf8c1ActionPerformed
-        juego.seleccionarCarta(7, 0);
+        controlador.seleccionarCarta(7, 0);
         actualizarTablero();
     }//GEN-LAST:event_btnf8c1ActionPerformed
 
     private void btnf8c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf8c3ActionPerformed
-        juego.seleccionarCarta(7, 2);
+        controlador.seleccionarCarta(7, 2);
         actualizarTablero();
     }//GEN-LAST:event_btnf8c3ActionPerformed
 
     private void btnf8c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf8c4ActionPerformed
-        juego.seleccionarCarta(7, 3);
+        controlador.seleccionarCarta(7, 3);
         actualizarTablero();
     }//GEN-LAST:event_btnf8c4ActionPerformed
 
     private void btnf8c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf8c5ActionPerformed
-        juego.seleccionarCarta(7, 4);
+        controlador.seleccionarCarta(7, 4);
         actualizarTablero();
     }//GEN-LAST:event_btnf8c5ActionPerformed
 
     private void btnf8c6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf8c6ActionPerformed
-        juego.seleccionarCarta(7, 5);
+        controlador.seleccionarCarta(7, 5);
         actualizarTablero();
     }//GEN-LAST:event_btnf8c6ActionPerformed
 
     private void btnf8c7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf8c7ActionPerformed
-        juego.seleccionarCarta(7, 6);
+        controlador.seleccionarCarta(7, 6);
         actualizarTablero();
     }//GEN-LAST:event_btnf8c7ActionPerformed
 
     private void btnf8c8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf8c8ActionPerformed
-        juego.seleccionarCarta(7, 7);
+        controlador.seleccionarCarta(7, 7);
         actualizarTablero();
     }//GEN-LAST:event_btnf8c8ActionPerformed
 
