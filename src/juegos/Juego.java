@@ -4,6 +4,7 @@ import cartas.Carta;
 import jugadores.Jugador;
 import niveles.Nivel;
 import tableros.Tablero;
+import javax.swing.Timer;
 
 public class Juego {
 
@@ -22,7 +23,7 @@ public class Juego {
         primeraCarta = null;
         segundaCarta = null;
     }
-    
+
     public void nuevaPartida() {
         tablero = new Tablero(nivel);
         jugador = new Jugador();
@@ -32,7 +33,7 @@ public class Juego {
 
     public void seleccionarCarta(int fila, int columna) {
         Carta carta = tablero.obtenerCarta(fila, columna);
-        if (carta.isEmparejada()|| carta.isEstado()) {
+        if (carta.isEmparejada() || carta.isEstado()) {
             return;
         }
         carta.setVisible(true);
@@ -47,16 +48,31 @@ public class Juego {
 
     private void verificarPareja() {
         jugador.incrementAttempts();
-        if (primeraCarta.getNombre()==segundaCarta.getNombre()) {
+
+        if (primeraCarta.getNombre() == segundaCarta.getNombre()) {
+
             primeraCarta.setEmparejada(true);
             segundaCarta.setEmparejada(true);
+
             jugador.incrementparejas();
             jugador.incrementScore();
+
         } else {
-            primeraCarta.setVisible(false);
-            segundaCarta.setVisible(false);
+
             jugador.LowerScore();
+
+            Carta carta1 = primeraCarta;
+            Carta carta2 = segundaCarta;
+
+            Timer timer = new Timer(2000, e -> {
+                carta1.setVisible(false);
+                carta2.setVisible(false);
+            });
+
+            timer.setRepeats(false);
+            timer.start();
         }
+
         primeraCarta = null;
         segundaCarta = null;
 
@@ -69,8 +85,8 @@ public class Juego {
         System.out.println("Juego finalizado");
         System.out.println("Puntaje: " + jugador.getScore());
         System.out.println("Intentos: " + jugador.getAttempts());
-        System.out.println("Parejas encontradas: " + 
-        jugador.getParejasEncontradas());
+        System.out.println("Parejas encontradas: "
+                + jugador.getParejasEncontradas());
     }
 
     public void cambiarNivel(Nivel nivel) {
