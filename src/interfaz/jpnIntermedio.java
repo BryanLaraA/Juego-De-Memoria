@@ -105,6 +105,198 @@ public class jpnIntermedio extends javax.swing.JPanel {
         btnf4c7 = new javax.swing.JButton();
         btnf4c8 = new javax.swing.JButton();
 
+        btnf1c1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf1c1ActionPerformed(evt);
+            }
+        });
+
+        btnf1c2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf1c2ActionPerformed(evt);
+            }
+        });
+
+        btnf1c3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf1c3ActionPerformed(evt);
+            }
+        });
+
+        btnf1c4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf1c4ActionPerformed(evt);
+            }
+        });
+
+        btnf1c5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf1c5ActionPerformed(evt);
+            }
+        });
+
+        btnf1c6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf1c6ActionPerformed(evt);
+            }
+        });
+
+        btnf1c7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf1c7ActionPerformed(evt);
+            }
+        });
+
+        btnf1c8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf1c8ActionPerformed(evt);
+            }
+        });
+
+        btnf2c1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf2c1ActionPerformed(evt);
+            }
+        });
+
+        btnf2c2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf2c2ActionPerformed(evt);
+            }
+        });
+
+        btnf2c3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf2c3ActionPerformed(evt);
+            }
+        });
+
+        btnf2c4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf2c4ActionPerformed(evt);
+            }
+        });
+
+        btnf2c5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf2c5ActionPerformed(evt);
+            }
+        });
+
+        btnf2c6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf2c6ActionPerformed(evt);
+            }
+        });
+
+        btnf2c7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf2c7ActionPerformed(evt);
+            }
+        });
+
+        btnf2c8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf2c8ActionPerformed(evt);
+            }
+        });
+
+        btnf3c1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf3c1ActionPerformed(evt);
+            }
+        });
+
+        btnf3c2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf3c2ActionPerformed(evt);
+            }
+        });
+
+        btnf3c3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf3c3ActionPerformed(evt);
+            }
+        });
+
+        btnf3c4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf3c4ActionPerformed(evt);
+            }
+        });
+
+        btnf3c5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf3c5ActionPerformed(evt);
+            }
+        });
+
+        btnf3c6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf3c6ActionPerformed(evt);
+            }
+        });
+
+        btnf3c7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf3c7ActionPerformed(evt);
+            }
+        });
+
+        btnf3c8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf3c8ActionPerformed(evt);
+            }
+        });
+
+        btnf4c1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf4c1ActionPerformed(evt);
+            }
+        });
+
+        btnf4c2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf4c2ActionPerformed(evt);
+            }
+        });
+
+        btnf4c3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf4c3ActionPerformed(evt);
+            }
+        });
+
+        btnf4c4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf4c4ActionPerformed(evt);
+            }
+        });
+
+        btnf4c5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf4c5ActionPerformed(evt);
+            }
+        });
+
+        btnf4c6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf4c6ActionPerformed(evt);
+            }
+        });
+
+        btnf4c7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf4c7ActionPerformed(evt);
+            }
+        });
+
+        btnf4c8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnf4c8ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -224,6 +416,134 @@ public class jpnIntermedio extends javax.swing.JPanel {
                 .addContainerGap(49, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnf1c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c1ActionPerformed
+        juego.seleccionarCarta(0,0);
+    }//GEN-LAST:event_btnf1c1ActionPerformed
+
+    private void btnf1c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c2ActionPerformed
+        juego.seleccionarCarta(0,1);
+    }//GEN-LAST:event_btnf1c2ActionPerformed
+
+    private void btnf1c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c3ActionPerformed
+        juego.seleccionarCarta(0,2);
+    }//GEN-LAST:event_btnf1c3ActionPerformed
+
+    private void btnf1c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c4ActionPerformed
+        juego.seleccionarCarta(0,3);
+    }//GEN-LAST:event_btnf1c4ActionPerformed
+
+    private void btnf1c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c5ActionPerformed
+        juego.seleccionarCarta(0,4);
+    }//GEN-LAST:event_btnf1c5ActionPerformed
+
+    private void btnf1c6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c6ActionPerformed
+        juego.seleccionarCarta(0,5);
+    }//GEN-LAST:event_btnf1c6ActionPerformed
+
+    private void btnf1c7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c7ActionPerformed
+        juego.seleccionarCarta(0,6);
+    }//GEN-LAST:event_btnf1c7ActionPerformed
+
+    private void btnf1c8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c8ActionPerformed
+        juego.seleccionarCarta(0,7);
+    }//GEN-LAST:event_btnf1c8ActionPerformed
+
+    private void btnf2c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c1ActionPerformed
+        juego.seleccionarCarta(1,0);
+    }//GEN-LAST:event_btnf2c1ActionPerformed
+
+    private void btnf2c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c2ActionPerformed
+        juego.seleccionarCarta(1,1);
+    }//GEN-LAST:event_btnf2c2ActionPerformed
+
+    private void btnf2c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c3ActionPerformed
+        juego.seleccionarCarta(1,2);
+    }//GEN-LAST:event_btnf2c3ActionPerformed
+
+    private void btnf2c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c4ActionPerformed
+        juego.seleccionarCarta(1,3);
+    }//GEN-LAST:event_btnf2c4ActionPerformed
+
+    private void btnf2c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c5ActionPerformed
+        juego.seleccionarCarta(1,4);
+    }//GEN-LAST:event_btnf2c5ActionPerformed
+
+    private void btnf2c6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c6ActionPerformed
+        juego.seleccionarCarta(1,5);
+    }//GEN-LAST:event_btnf2c6ActionPerformed
+
+    private void btnf2c7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c7ActionPerformed
+        juego.seleccionarCarta(1,6);
+    }//GEN-LAST:event_btnf2c7ActionPerformed
+
+    private void btnf2c8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c8ActionPerformed
+        juego.seleccionarCarta(1,7);
+    }//GEN-LAST:event_btnf2c8ActionPerformed
+
+    private void btnf3c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c1ActionPerformed
+        juego.seleccionarCarta(2,0);
+    }//GEN-LAST:event_btnf3c1ActionPerformed
+
+    private void btnf3c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c2ActionPerformed
+        juego.seleccionarCarta(2,1);
+    }//GEN-LAST:event_btnf3c2ActionPerformed
+
+    private void btnf3c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c3ActionPerformed
+        juego.seleccionarCarta(2,2);
+    }//GEN-LAST:event_btnf3c3ActionPerformed
+
+    private void btnf3c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c4ActionPerformed
+        juego.seleccionarCarta(2,3);
+    }//GEN-LAST:event_btnf3c4ActionPerformed
+
+    private void btnf3c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c5ActionPerformed
+        juego.seleccionarCarta(2,4);
+    }//GEN-LAST:event_btnf3c5ActionPerformed
+
+    private void btnf3c6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c6ActionPerformed
+        juego.seleccionarCarta(2,5);
+    }//GEN-LAST:event_btnf3c6ActionPerformed
+
+    private void btnf3c7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c7ActionPerformed
+        juego.seleccionarCarta(2,6);
+    }//GEN-LAST:event_btnf3c7ActionPerformed
+
+    private void btnf3c8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c8ActionPerformed
+        juego.seleccionarCarta(2,7);
+    }//GEN-LAST:event_btnf3c8ActionPerformed
+
+    private void btnf4c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c1ActionPerformed
+        juego.seleccionarCarta(3,0);
+    }//GEN-LAST:event_btnf4c1ActionPerformed
+
+    private void btnf4c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c2ActionPerformed
+        juego.seleccionarCarta(3,1);
+    }//GEN-LAST:event_btnf4c2ActionPerformed
+
+    private void btnf4c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c3ActionPerformed
+        juego.seleccionarCarta(3,2);
+    }//GEN-LAST:event_btnf4c3ActionPerformed
+
+    private void btnf4c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c4ActionPerformed
+        juego.seleccionarCarta(3,3);
+    }//GEN-LAST:event_btnf4c4ActionPerformed
+
+    private void btnf4c5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c5ActionPerformed
+        juego.seleccionarCarta(3,4);
+    }//GEN-LAST:event_btnf4c5ActionPerformed
+
+    private void btnf4c6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c6ActionPerformed
+        juego.seleccionarCarta(3,5);
+    }//GEN-LAST:event_btnf4c6ActionPerformed
+
+    private void btnf4c7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c7ActionPerformed
+        juego.seleccionarCarta(3,6);
+    }//GEN-LAST:event_btnf4c7ActionPerformed
+
+    private void btnf4c8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c8ActionPerformed
+        juego.seleccionarCarta(3,7);
+    }//GEN-LAST:event_btnf4c8ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
