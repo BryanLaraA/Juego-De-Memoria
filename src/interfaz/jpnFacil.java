@@ -199,6 +199,7 @@ public class jpnFacil extends javax.swing.JPanel {
 
     private void btnf2c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c1ActionPerformed
          juego.seleccionarCarta(1,0);
+         actualizarTablero();
     }//GEN-LAST:event_btnf2c1ActionPerformed
 
     private void btnf1c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c1ActionPerformed
