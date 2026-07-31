@@ -14,8 +14,18 @@ public class Juego {
 
     private Carta primeraCarta;
     private Carta segundaCarta;
+    
+    public Tablero getTablero() {
+        return tablero;
+    }
 
-    private Runnable actualizarVista;
+    public Jugador getJugador() {
+        return jugador;
+    }
+
+    public Nivel getNivel() {
+        return nivel;
+    }
 
     public Juego(Nivel nivel) {
         this.nivel = nivel;
@@ -42,7 +52,6 @@ public class Juego {
         carta.setVisible(true);
 
         if (primeraCarta == null) {
-
             primeraCarta = carta;
         } else {
             segundaCarta = carta;
@@ -52,44 +61,24 @@ public class Juego {
 
     private void verificarPareja() {
         jugador.incrementAttempts();
-
         if (primeraCarta.getNombre() == segundaCarta.getNombre()) {
-
             primeraCarta.setEmparejada(true);
             segundaCarta.setEmparejada(true);
-
             jugador.incrementparejas();
             jugador.incrementScore();
-
-            if (actualizarVista != null) {
-                actualizarVista.run();
-            }
-
         } else {
-
             jugador.LowerScore();
-
             Carta carta1 = primeraCarta;
             Carta carta2 = segundaCarta;
-
             Timer timer = new Timer(2000, e -> {
-
                 carta1.setVisible(false);
                 carta2.setVisible(false);
-
-                if (actualizarVista != null) {
-                    actualizarVista.run();
-                }
             });
-
             timer.setRepeats(false);
-
             timer.start();
         }
-
         primeraCarta = null;
         segundaCarta = null;
-
         if (tablero.juegoFinalizado()) {
             finalizarJuego();
         }
@@ -108,19 +97,5 @@ public class Juego {
         nuevaPartida();
     }
 
-    public void setActualizarVista(Runnable actualizarVista) {
-        this.actualizarVista = actualizarVista;
-    }
-
-    public Tablero getTablero() {
-        return tablero;
-    }
-
-    public Jugador getJugador() {
-        return jugador;
-    }
-
-    public Nivel getNivel() {
-        return nivel;
-    }
+    
 }

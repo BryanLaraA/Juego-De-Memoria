@@ -5,7 +5,9 @@
 package interfaz;
 
 import cartas.Carta;
+import controladores.ControladorJuego;
 import javax.swing.JButton;
+import javax.swing.Timer;
 import juegos.Juego;
 
 /**
@@ -14,8 +16,9 @@ import juegos.Juego;
  */
 public class jpnAvanzado extends javax.swing.JPanel {
 
-    private Juego juego;
+     private ControladorJuego controlador;
     JButton[] botones = new JButton[64];
+    private Juego juego;
 
     private final String[] emojis = {
         "😀", "😎", "🤖", "👻",
@@ -31,10 +34,10 @@ public class jpnAvanzado extends javax.swing.JPanel {
     /**
      * Creates new form jpnAvanzado
      */
-    public jpnAvanzado(Juego juego) {
+    public jpnAvanzado(ControladorJuego controlador) {
 
         initComponents();
-        this.juego = juego;
+        this.controlador = controlador;
 
         botones[0] = btnf1c1;
         botones[1] = btnf1c2;
@@ -100,11 +103,14 @@ public class jpnAvanzado extends javax.swing.JPanel {
         botones[61] = btnf8c6;
         botones[62] = btnf8c7;
         botones[63] = btnf8c8;
+        
+        Timer refresco = new Timer(200, e -> actualizarTablero());
+        refresco.start();
     }
 
     public void actualizarTablero() {
 
-        Carta[][] cartas = juego.getTablero().getTablero();
+        Carta[][] cartas = controlador.getJuego().getTablero().getTablero();
 
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {

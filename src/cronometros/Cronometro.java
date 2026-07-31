@@ -1,15 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package cronometros;
 
 import javax.swing.Timer;
 
-/**
- *
- * @author lenno
- */
 public class Cronometro {
 
     private int segundos;
@@ -17,7 +9,6 @@ public class Cronometro {
 
     public Cronometro() {
         segundos = 0;
-
         timer = new Timer(1000, evento -> Aumentar_tiempo());
     }
 

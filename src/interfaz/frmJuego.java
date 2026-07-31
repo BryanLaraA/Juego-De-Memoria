@@ -4,6 +4,7 @@
  */
 package interfaz;
 
+import controladores.ControladorJuego;
 import java.awt.BorderLayout;
 import javax.swing.JPanel;
 import juegos.Juego;
@@ -18,10 +19,9 @@ import javax.swing.Timer;
 public class frmJuego extends javax.swing.JFrame {
 
     private Cronometro cronometro;
-    private Timer actualizar;
+    private ControladorJuego controlador;
 
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frmJuego.class.getName());
-    private Juego juego;
     private Nivel nivelActual;
 
     /* Creates new form frmJuego
@@ -32,38 +32,29 @@ public class frmJuego extends javax.swing.JFrame {
         jpnPantalla.setLayout(new BorderLayout());
 
         cronometro = new Cronometro();
-        cronometro.iniciar();
-
-        actualizar = new Timer(1000, e -> {
-            lblTimer.setText(cronometro.getTiempo_reiniciado());
-        });
-
-        actualizar.start();
-
         lblTimer.setText("0:00");
-
+        Timer actualizarReloj = new Timer(1000, e -> lblTimer.setText(cronometro.getTiempo_reiniciado()));
+        actualizarReloj.start();
         this.nivelActual = nivel;
-        juego = new Juego(nivel);
-        
+        Juego juego = new Juego(nivel);         
+        frmMenu menu = new frmMenu();
+        controlador = new ControladorJuego(this, menu, cronometro, juego);
+        controlador.iniciarJuego(nivel);
+
         actualizarInfo();
         JPanel panel;
         switch (nivel.getParejas()) {
-            case 8 ->
-                panel = new jpnFacil(this.juego);
-            case 16 ->
-                panel = new jpnIntermedio(this.juego);
-            case 32 ->
-                panel = new jpnAvanzado(this.juego);
-            default ->
-                panel = new JPanel();
+            case 8 -> panel = new jpnFacil(controlador);
+            case 16 -> panel = new jpnIntermedio(controlador);
+            case 32 -> panel = new jpnAvanzado(controlador);
+            default -> panel = new JPanel();
         }
         mostrarJuego(panel);
-
     }
-    
+ 
     private void actualizarInfo() {
-        lblScore.setText("Puntaje: " + juego.getJugador().getScore());
-        lblIntentos.setText("Intentos: " + juego.getJugador().getAttempts());
+        lblScore.setText("Puntaje: " + controlador.getJuego().getJugador().getScore());
+        lblIntentos.setText("Intentos: " + controlador.getJuego().getJugador().getAttempts());
     }
 
     private void mostrarJuego(JPanel panel) {
@@ -168,22 +159,12 @@ public class frmJuego extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuActionPerformed
-        actualizar.stop();
-        cronometro.detener();
-        frmMenu menu = new frmMenu();
-        menu.setVisible(true);
-        this.dispose();
+        controlador.volverAlMenu();
     }//GEN-LAST:event_btnMenuActionPerformed
 
     private void btnReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReiniciarActionPerformed
-
-        cronometro.reiniciar();
-
+     controlador.nuevaPartida();
         lblTimer.setText("0:00");
-
-        if (!actualizar.isRunning()) {
-            actualizar.start();
-        }
     }//GEN-LAST:event_btnReiniciarActionPerformed
 
     /**

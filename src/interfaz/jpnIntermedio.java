@@ -5,7 +5,9 @@
 package interfaz;
 
 import cartas.Carta;
+import controladores.ControladorJuego;
 import javax.swing.JButton;
+import javax.swing.Timer;
 import juegos.Juego;
 
 /**
@@ -13,7 +15,7 @@ import juegos.Juego;
  * @author Yumor
  */
 public class jpnIntermedio extends javax.swing.JPanel {
-
+    private ControladorJuego controlador;
     private Juego juego;
 
     JButton[] botones = new JButton[32];
@@ -28,11 +30,11 @@ public class jpnIntermedio extends javax.swing.JPanel {
     /**
      * Creates new form jpnIntermedio
      */
-    public jpnIntermedio(Juego juego) {
+    public jpnIntermedio(ControladorJuego controlador) {
 
         initComponents();
 
-        this.juego = juego;
+        this.controlador = controlador;
 
         botones[0] = btnf1c1;
         botones[1] = btnf1c2;
@@ -42,7 +44,6 @@ public class jpnIntermedio extends javax.swing.JPanel {
         botones[5] = btnf1c6;
         botones[6] = btnf1c7;
         botones[7] = btnf1c8;
-
         botones[8] = btnf2c1;
         botones[9] = btnf2c2;
         botones[10] = btnf2c3;
@@ -51,7 +52,6 @@ public class jpnIntermedio extends javax.swing.JPanel {
         botones[13] = btnf2c6;
         botones[14] = btnf2c7;
         botones[15] = btnf2c8;
-
         botones[16] = btnf3c1;
         botones[17] = btnf3c2;
         botones[18] = btnf3c3;
@@ -60,7 +60,6 @@ public class jpnIntermedio extends javax.swing.JPanel {
         botones[21] = btnf3c6;
         botones[22] = btnf3c7;
         botones[23] = btnf3c8;
-
         botones[24] = btnf4c1;
         botones[25] = btnf4c2;
         botones[26] = btnf4c3;
@@ -70,12 +69,13 @@ public class jpnIntermedio extends javax.swing.JPanel {
         botones[30] = btnf4c7;
         botones[31] = btnf4c8;
 
-        actualizarTablero();
+        Timer refresco = new Timer(200, e -> actualizarTablero());
+        refresco.start();
     }
 
     public void actualizarTablero() {
 
-        Carta[][] cartas = juego.getTablero().getTablero();
+        Carta[][] cartas = controlador.getJuego().getTablero().getTablero();
 
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 8; j++) {
