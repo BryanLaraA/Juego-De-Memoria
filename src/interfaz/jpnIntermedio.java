@@ -78,30 +78,20 @@ public class jpnIntermedio extends javax.swing.JPanel {
         Carta[][] cartas = juego.getTablero().getTablero();
 
         for (int i = 0; i < 4; i++) {
-
             for (int j = 0; j < 8; j++) {
-
                 int indice = i * 8 + j;
-
                 Carta carta = cartas[i][j];
-
                 if (carta.isEstado() || carta.isEmparejada()) {
-
-                    botones[indice].setText(
-                            emojis[carta.getNombre() - 1]
-                    );
-
+                  botones[indice].setText(
+                  emojis[carta.getNombre() - 1]);
                 } else {
-
-                    botones[indice].setText("?");
+                  botones[indice].setText("?");
                 }
-
-                botones[indice].setEnabled(
-                        !carta.isEmparejada()
-                );
-            }
+            botones[indice].setEnabled(!carta.isEmparejada()
+            );
         }
     }
+}
 
     /**
      * This method is called from within the constructor to initialize the form.
