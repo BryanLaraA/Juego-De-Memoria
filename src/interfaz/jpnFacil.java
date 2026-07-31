@@ -181,11 +181,11 @@ public class jpnFacil extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnf2c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c1ActionPerformed
-        // TODO add your handling code here:
+         juego.seleccionarCarta(1,1);
     }//GEN-LAST:event_btnf2c1ActionPerformed
 
     private void btnf1c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c1ActionPerformed
-        // TODO add your handling code here:
+        juego.seleccionarCarta(0,0);
     }//GEN-LAST:event_btnf1c1ActionPerformed
 
     private void btnf2c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c3ActionPerformed
@@ -193,7 +193,7 @@ public class jpnFacil extends javax.swing.JPanel {
     }//GEN-LAST:event_btnf2c3ActionPerformed
 
     private void btnf1c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c3ActionPerformed
-        // TODO add your handling code here:
+        juego.seleccionarCarta(0,2);
     }//GEN-LAST:event_btnf1c3ActionPerformed
 
     private void btnf1c8Abtnf1c1rformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c8ActionPerformed
@@ -201,7 +201,7 @@ public class jpnFacil extends javax.swing.JPanel {
     }//GEN-LAST:event_btnf1c8ActionPerformed
 
     private void btnf2c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c2ActionPerformed
-        // TODO add your handling code here:
+         juego.seleccionarCarta(1,2);
     }//GEN-LAST:event_btnf2c2ActionPerformed
 
     private void btnf4c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c1ActionPerformed
@@ -233,7 +233,7 @@ public class jpnFacil extends javax.swing.JPanel {
     }//GEN-LAST:event_btnf2c4ActionPerformed
 
     private void btnf1c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c4ActionPerformed
-        // TODO add your handling code here:
+         juego.seleccionarCarta(0,4);
     }//GEN-LAST:event_btnf1c4ActionPerformed
 
     private void btnf4c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c4ActionPerformed
@@ -245,7 +245,7 @@ public class jpnFacil extends javax.swing.JPanel {
     }//GEN-LAST:event_btnf3c4ActionPerformed
 
     private void btnf1c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c2ActionPerformed
-        // TODO add your handling code here:
+         juego.seleccionarCarta(0,1);
     }//GEN-LAST:event_btnf1c2ActionPerformed
 
 
