@@ -4,6 +4,7 @@
  */
 package interfaz;
 
+import cartas.Carta;
 import javax.swing.JButton;
 import juegos.Juego;
 
@@ -13,6 +14,7 @@ import juegos.Juego;
  */
 public class jpnFacil extends javax.swing.JPanel {
      private Juego juego;
+     private Carta [][] carta;
      JButton[] botones = new JButton [16];
     /**
      * Creates new form jpnFacil
@@ -37,7 +39,11 @@ public class jpnFacil extends javax.swing.JPanel {
     botones[12] = btnf4c1;
     botones[13]= btnf4c2;
     botones[14]= btnf4c3;
-    botones[15] = btnf4c4;     
+    botones[15] = btnf4c4;   
+    }
+    
+    public void actualizarTablero(){
+        Carta [][] cartas = juego.getTablero().getTablero();
     }
 
     /**
