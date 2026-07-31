@@ -6,9 +6,12 @@ package interfaz;
 
 import cartas.Carta;
 import controladores.ControladorJuego;
+import java.awt.Font;
+import java.awt.Image;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.Timer;
-import juegos.Juego;
+
 
 /**
  *
@@ -16,7 +19,7 @@ import juegos.Juego;
  */
 public class jpnIntermedio extends javax.swing.JPanel {
     private ControladorJuego controlador;
-    private Juego juego;
+    private ImageIcon dorsoIcon;
 
     JButton[] botones = new JButton[32];
 
@@ -70,6 +73,22 @@ public class jpnIntermedio extends javax.swing.JPanel {
 
         Timer refresco = new Timer(200, e -> actualizarTablero());
         refresco.start();
+        
+        cargarDorso();
+    }
+    
+    private void cargarDorso() {
+        java.net.URL url = getClass().getResource("/interfaz/icon/jp.png.jpeg");
+        ImageIcon original = new ImageIcon(url);
+        int ancho = 55;
+        int alto = 100;
+        Image escalada = original.getImage().getScaledInstance(ancho, alto, Image.SCALE_SMOOTH);
+        dorsoIcon = new ImageIcon(escalada);
+        
+        for (JButton boton : botones){
+            boton.setIcon(dorsoIcon);
+            boton.setFont(new Font("Segoe UI Emoji",Font.PLAIN,20));
+        }
     }
 
     public void actualizarTablero() {
@@ -79,10 +98,12 @@ public class jpnIntermedio extends javax.swing.JPanel {
                 int indice = i * 8 + j;
                 Carta carta = cartas[i][j];
                 if (carta.isEstado() || carta.isEmparejada()) {
+                  botones[indice].setIcon(null);
                   botones[indice].setText(
                   emojis[carta.getNombre() - 1]);
                 } else {
-                  botones[indice].setText("?");
+                  botones[indice].setText("");
+                  botones[indice].setIcon(dorsoIcon);
                 }
             botones[indice].setEnabled(!carta.isEmparejada()
             );
@@ -132,316 +153,231 @@ public class jpnIntermedio extends javax.swing.JPanel {
         btnf4c7 = new javax.swing.JButton();
         btnf4c8 = new javax.swing.JButton();
 
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         btnf1c1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf1c1ActionPerformed(evt);
             }
         });
+        add(btnf1c1, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 43, 55, 100));
 
         btnf1c2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf1c2ActionPerformed(evt);
             }
         });
+        add(btnf1c2, new org.netbeans.lib.awtextra.AbsoluteConstraints(79, 43, 55, 100));
 
         btnf1c3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf1c3ActionPerformed(evt);
             }
         });
+        add(btnf1c3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 43, 55, 100));
 
         btnf1c4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf1c4ActionPerformed(evt);
             }
         });
+        add(btnf1c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 43, 55, 100));
 
         btnf1c5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf1c5ActionPerformed(evt);
             }
         });
+        add(btnf1c5, new org.netbeans.lib.awtextra.AbsoluteConstraints(262, 43, 55, 100));
 
         btnf1c6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf1c6ActionPerformed(evt);
             }
         });
+        add(btnf1c6, new org.netbeans.lib.awtextra.AbsoluteConstraints(323, 43, 55, 100));
 
         btnf1c7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf1c7ActionPerformed(evt);
             }
         });
+        add(btnf1c7, new org.netbeans.lib.awtextra.AbsoluteConstraints(384, 43, 55, 100));
 
         btnf1c8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf1c8ActionPerformed(evt);
             }
         });
+        add(btnf1c8, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 43, 55, 100));
 
         btnf2c1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf2c1ActionPerformed(evt);
             }
         });
+        add(btnf2c1, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 169, 55, 100));
 
         btnf2c2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf2c2ActionPerformed(evt);
             }
         });
+        add(btnf2c2, new org.netbeans.lib.awtextra.AbsoluteConstraints(79, 169, 55, 100));
 
         btnf2c3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf2c3ActionPerformed(evt);
             }
         });
+        add(btnf2c3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 169, 55, 100));
 
         btnf2c4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf2c4ActionPerformed(evt);
             }
         });
+        add(btnf2c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 169, 55, 100));
 
         btnf2c5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf2c5ActionPerformed(evt);
             }
         });
+        add(btnf2c5, new org.netbeans.lib.awtextra.AbsoluteConstraints(262, 169, 55, 100));
 
         btnf2c6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf2c6ActionPerformed(evt);
             }
         });
+        add(btnf2c6, new org.netbeans.lib.awtextra.AbsoluteConstraints(323, 169, 55, 100));
 
         btnf2c7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf2c7ActionPerformed(evt);
             }
         });
+        add(btnf2c7, new org.netbeans.lib.awtextra.AbsoluteConstraints(384, 169, 55, 100));
 
         btnf2c8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf2c8ActionPerformed(evt);
             }
         });
+        add(btnf2c8, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 169, 55, 100));
 
         btnf3c1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf3c1ActionPerformed(evt);
             }
         });
+        add(btnf3c1, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 295, 55, 100));
 
         btnf3c2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf3c2ActionPerformed(evt);
             }
         });
+        add(btnf3c2, new org.netbeans.lib.awtextra.AbsoluteConstraints(79, 295, 55, 100));
 
         btnf3c3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf3c3ActionPerformed(evt);
             }
         });
+        add(btnf3c3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 295, 55, 100));
 
         btnf3c4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf3c4ActionPerformed(evt);
             }
         });
+        add(btnf3c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 295, 55, 100));
 
         btnf3c5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf3c5ActionPerformed(evt);
             }
         });
+        add(btnf3c5, new org.netbeans.lib.awtextra.AbsoluteConstraints(262, 295, 55, 100));
 
         btnf3c6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf3c6ActionPerformed(evt);
             }
         });
+        add(btnf3c6, new org.netbeans.lib.awtextra.AbsoluteConstraints(323, 295, 55, 100));
 
         btnf3c7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf3c7ActionPerformed(evt);
             }
         });
+        add(btnf3c7, new org.netbeans.lib.awtextra.AbsoluteConstraints(384, 295, 55, 100));
 
         btnf3c8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf3c8ActionPerformed(evt);
             }
         });
+        add(btnf3c8, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 295, 55, 100));
 
         btnf4c1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf4c1ActionPerformed(evt);
             }
         });
+        add(btnf4c1, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 421, 55, 100));
 
         btnf4c2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf4c2ActionPerformed(evt);
             }
         });
+        add(btnf4c2, new org.netbeans.lib.awtextra.AbsoluteConstraints(79, 421, 55, 100));
 
         btnf4c3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf4c3ActionPerformed(evt);
             }
         });
+        add(btnf4c3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 421, 55, 100));
 
         btnf4c4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf4c4ActionPerformed(evt);
             }
         });
+        add(btnf4c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(201, 421, 55, 100));
 
         btnf4c5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf4c5ActionPerformed(evt);
             }
         });
+        add(btnf4c5, new org.netbeans.lib.awtextra.AbsoluteConstraints(262, 421, 55, 100));
 
         btnf4c6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf4c6ActionPerformed(evt);
             }
         });
+        add(btnf4c6, new org.netbeans.lib.awtextra.AbsoluteConstraints(323, 421, 55, 100));
 
         btnf4c7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf4c7ActionPerformed(evt);
             }
         });
+        add(btnf4c7, new org.netbeans.lib.awtextra.AbsoluteConstraints(384, 421, 55, 100));
 
         btnf4c8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnf4c8ActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnf1c1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf1c2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf1c3, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf1c4, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf1c5, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf1c6, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf1c7, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf1c8, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnf2c1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf2c2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf2c3, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf2c4, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf2c5, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf2c6, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf2c7, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf2c8, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnf3c1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf3c2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf3c3, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf3c4, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf3c5, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf3c6, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf3c7, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf3c8, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnf4c1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf4c2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf4c3, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf4c4, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf4c5, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf4c6, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf4c7, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(btnf4c8, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(43, 43, 43)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnf1c1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf1c2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf1c3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf1c4, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf1c5, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf1c6, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf1c7, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf1c8, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(6, 6, 6)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnf2c1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf2c2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf2c3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf2c4, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf2c5, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf2c6, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf2c7, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf2c8, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(6, 6, 6)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnf3c1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf3c2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf3c3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf3c4, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf3c5, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf3c6, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf3c7, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf3c8, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(6, 6, 6)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnf4c1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf4c2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf4c3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf4c4, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf4c5, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf4c6, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf4c7, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnf4c8, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(49, Short.MAX_VALUE))
-        );
+        add(btnf4c8, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 421, 55, 100));
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnf1c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c1ActionPerformed

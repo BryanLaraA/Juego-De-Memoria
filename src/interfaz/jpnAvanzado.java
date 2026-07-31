@@ -6,6 +6,9 @@ package interfaz;
 
 import cartas.Carta;
 import controladores.ControladorJuego;
+import java.awt.Font;
+import java.awt.Image;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.Timer;
 import juegos.Juego;
@@ -15,7 +18,7 @@ import juegos.Juego;
  * @author lenno
  */
 public class jpnAvanzado extends javax.swing.JPanel {
-
+     private ImageIcon dorsoIcon;
     private ControladorJuego controlador;
     JButton[] botones = new JButton[64];
     private Juego juego;
@@ -104,6 +107,22 @@ public class jpnAvanzado extends javax.swing.JPanel {
 
         Timer refresco = new Timer(200, e -> actualizarTablero());
         refresco.start();
+        
+        cargarDorso();
+    }
+    
+     private void cargarDorso() {
+        java.net.URL url = getClass().getResource("/interfaz/icon/jp.png.jpeg");
+        ImageIcon original = new ImageIcon(url);
+        int ancho = 49;
+        int alto = 67;
+        Image escalada = original.getImage().getScaledInstance(ancho, alto, Image.SCALE_SMOOTH);
+        dorsoIcon = new ImageIcon(escalada);
+        
+        for (JButton boton : botones){
+            boton.setIcon(dorsoIcon);
+            boton.setFont(new Font("Segoe UI Emoji",Font.PLAIN,15));
+        }
     }
 
     public void actualizarTablero() {
@@ -113,11 +132,13 @@ public class jpnAvanzado extends javax.swing.JPanel {
                 int indice = i * 8 + j;
                 Carta carta = cartas[i][j];
                 if (carta.isEstado() || carta.isEmparejada()) {
+                    botones[indice].setIcon(null);
                     botones[indice].setText(
                             emojis[carta.getNombre() - 1]
                     );
                 } else {
-                    botones[indice].setText("?");
+                    botones[indice].setText("");
+                    botones[indice].setIcon(dorsoIcon);
                 }
                 botones[indice].setEnabled(
                         !carta.isEmparejada()
@@ -202,500 +223,328 @@ public class jpnAvanzado extends javax.swing.JPanel {
         btnf5c6 = new javax.swing.JButton();
 
         jPanel1.setPreferredSize(new java.awt.Dimension(510, 590));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnf1c7.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf1c7.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf1c7.addActionListener(this::btnf1c7ActionPerformed);
+        jPanel1.add(btnf1c7, new org.netbeans.lib.awtextra.AbsoluteConstraints(365, 6, 49, 67));
 
         btnf1c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf1c2.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf1c2.addActionListener(this::btnf1c2ActionPerformed);
+        jPanel1.add(btnf1c2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 6, 49, 67));
 
         btnf1c5.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf1c5.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf1c5.addActionListener(this::btnf1c5ActionPerformed);
+        jPanel1.add(btnf1c5, new org.netbeans.lib.awtextra.AbsoluteConstraints(255, 6, 49, 67));
 
         btnf1c1.setToolTipText("");
-        btnf1c1.setActionCommand("");
         btnf1c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf1c1.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf1c1.addActionListener(this::btnf1c1ActionPerformed);
+        jPanel1.add(btnf1c1, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 6, 49, 67));
 
         btnf1c3.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf1c3.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf1c3.addActionListener(this::btnf1c3ActionPerformed);
+        jPanel1.add(btnf1c3, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 6, 49, 67));
 
         btnf1c6.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf1c6.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf1c6.addActionListener(this::btnf1c6ActionPerformed);
+        jPanel1.add(btnf1c6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 6, 49, 67));
 
         btnf1c4.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf1c4.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf1c4.addActionListener(this::btnf1c4ActionPerformed);
+        jPanel1.add(btnf1c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 6, 49, 67));
 
         btnf1c8.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf1c8.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf1c8.addActionListener(this::btnf1c8ActionPerformed);
+        jPanel1.add(btnf1c8, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 6, 49, 67));
 
         btnf2c4.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf2c4.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf2c4.addActionListener(this::btnf2c4ActionPerformed);
+        jPanel1.add(btnf2c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 79, 49, 67));
 
         btnf2c7.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf2c7.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf2c7.addActionListener(this::btnf2c7ActionPerformed);
+        jPanel1.add(btnf2c7, new org.netbeans.lib.awtextra.AbsoluteConstraints(365, 79, 49, 67));
 
         btnf2c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf2c2.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf2c2.addActionListener(this::btnf2c2ActionPerformed);
+        jPanel1.add(btnf2c2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 79, 49, 67));
 
         btnf2c8.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf2c8.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf2c8.addActionListener(this::btnf2c8ActionPerformed);
+        jPanel1.add(btnf2c8, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 79, 49, 67));
 
         btnf2c5.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf2c5.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf2c5.addActionListener(this::btnf2c5ActionPerformed);
+        jPanel1.add(btnf2c5, new org.netbeans.lib.awtextra.AbsoluteConstraints(255, 79, 49, 67));
 
         btnf2c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf2c1.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf2c1.addActionListener(this::btnf2c1ActionPerformed);
+        jPanel1.add(btnf2c1, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 79, 49, 67));
 
         btnf2c3.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf2c3.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf2c3.addActionListener(this::btnf2c3ActionPerformed);
+        jPanel1.add(btnf2c3, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 79, 49, 67));
 
         btnf2c6.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf2c6.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf2c6.addActionListener(this::btnf2c6ActionPerformed);
+        jPanel1.add(btnf2c6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 79, 49, 67));
 
         btnf3c4.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf3c4.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf3c4.addActionListener(this::btnf3c4ActionPerformed);
+        jPanel1.add(btnf3c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 152, 49, 67));
 
         btnf3c7.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf3c7.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf3c7.addActionListener(this::btnf3c7ActionPerformed);
+        jPanel1.add(btnf3c7, new org.netbeans.lib.awtextra.AbsoluteConstraints(365, 152, 49, 67));
 
         btnf3c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf3c2.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf3c2.addActionListener(this::btnf3c2ActionPerformed);
+        jPanel1.add(btnf3c2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 152, 49, 67));
 
         btnf3c8.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf3c8.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf3c8.addActionListener(this::btnf3c8ActionPerformed);
+        jPanel1.add(btnf3c8, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 152, 49, 67));
 
         btnf3c5.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf3c5.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf3c5.addActionListener(this::btnf3c5ActionPerformed);
+        jPanel1.add(btnf3c5, new org.netbeans.lib.awtextra.AbsoluteConstraints(255, 152, 49, 67));
 
         btnf3c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf3c1.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf3c1.addActionListener(this::btnf3c1ActionPerformed);
+        jPanel1.add(btnf3c1, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 152, 49, 67));
 
         btnf4c4.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf4c4.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf4c4.addActionListener(this::btnf4c4ActionPerformed);
+        jPanel1.add(btnf4c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 225, 49, 67));
 
         btnf3c3.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf3c3.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf3c3.addActionListener(this::btnf3c3ActionPerformed);
+        jPanel1.add(btnf3c3, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 152, 49, 67));
 
         btnf4c7.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf4c7.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf4c7.addActionListener(this::btnf4c7ActionPerformed);
+        jPanel1.add(btnf4c7, new org.netbeans.lib.awtextra.AbsoluteConstraints(365, 225, 49, 67));
 
         btnf4c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf4c2.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf4c2.addActionListener(this::btnf4c2ActionPerformed);
+        jPanel1.add(btnf4c2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 225, 49, 67));
 
         btnf4c8.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf4c8.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf4c8.addActionListener(this::btnf4c8ActionPerformed);
+        jPanel1.add(btnf4c8, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 225, 49, 67));
 
         btnf4c5.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf4c5.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf4c5.addActionListener(this::btnf4c5ActionPerformed);
+        jPanel1.add(btnf4c5, new org.netbeans.lib.awtextra.AbsoluteConstraints(255, 225, 49, 67));
 
         btnf4c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf4c1.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf4c1.addActionListener(this::btnf4c1ActionPerformed);
+        jPanel1.add(btnf4c1, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 225, 49, 67));
 
         btnf4c3.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf4c3.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf4c3.addActionListener(this::btnf4c3ActionPerformed);
+        jPanel1.add(btnf4c3, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 225, 49, 67));
 
         btnf4c6.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf4c6.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf4c6.addActionListener(this::btnf4c6ActionPerformed);
+        jPanel1.add(btnf4c6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 225, 49, 67));
 
         btnf3c6.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf3c6.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf3c6.addActionListener(this::btnf3c6ActionPerformed);
+        jPanel1.add(btnf3c6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 152, 49, 67));
 
         btnf7c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf7c2.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf7c2.addActionListener(this::btnf7c2ActionPerformed);
+        jPanel1.add(btnf7c2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 444, 49, 67));
 
         btnf7c8.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf7c8.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf7c8.addActionListener(this::btnf7c8ActionPerformed);
+        jPanel1.add(btnf7c8, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 444, 49, 67));
 
         btnf7c5.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf7c5.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf7c5.addActionListener(this::btnf7c5ActionPerformed);
+        jPanel1.add(btnf7c5, new org.netbeans.lib.awtextra.AbsoluteConstraints(255, 444, 49, 67));
 
         btnf7c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf7c1.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf7c1.addActionListener(this::btnf7c1ActionPerformed);
+        jPanel1.add(btnf7c1, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 444, 49, 67));
 
         btnf8c4.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf8c4.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf8c4.addActionListener(this::btnf8c4ActionPerformed);
+        jPanel1.add(btnf8c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 517, 49, 67));
 
         btnf7c3.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf7c3.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf7c3.addActionListener(this::btnf7c3ActionPerformed);
+        jPanel1.add(btnf7c3, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 444, 49, 67));
 
         btnf5c4.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf5c4.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf5c4.addActionListener(this::btnf5c4ActionPerformed);
+        jPanel1.add(btnf5c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 298, 49, 67));
 
         btnf8c7.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf8c7.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf8c7.addActionListener(this::btnf8c7ActionPerformed);
+        jPanel1.add(btnf8c7, new org.netbeans.lib.awtextra.AbsoluteConstraints(365, 517, 49, 67));
 
         btnf8c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf8c2.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf8c2.addActionListener(this::btnf8c2ActionPerformed);
+        jPanel1.add(btnf8c2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 517, 49, 67));
 
         btnf8c8.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf8c8.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf8c8.addActionListener(this::btnf8c8ActionPerformed);
+        jPanel1.add(btnf8c8, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 517, 49, 67));
 
         btnf5c7.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf5c7.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf5c7.addActionListener(this::btnf5c7ActionPerformed);
+        jPanel1.add(btnf5c7, new org.netbeans.lib.awtextra.AbsoluteConstraints(365, 298, 49, 67));
 
         btnf5c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf5c2.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf5c2.addActionListener(this::btnf5c2ActionPerformed);
+        jPanel1.add(btnf5c2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 298, 49, 67));
 
         btnf5c8.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf5c8.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf5c8.addActionListener(this::btnf5c8ActionPerformed);
+        jPanel1.add(btnf5c8, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 298, 49, 67));
 
         btnf5c5.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf5c5.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf5c5.addActionListener(this::btnf5c5ActionPerformed);
+        jPanel1.add(btnf5c5, new org.netbeans.lib.awtextra.AbsoluteConstraints(255, 298, 49, 67));
 
         btnf5c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf5c1.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf5c1.addActionListener(this::btnf5c1ActionPerformed);
+        jPanel1.add(btnf5c1, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 298, 49, 67));
 
         btnf6c4.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf6c4.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf6c4.addActionListener(this::btnf6c4ActionPerformed);
+        jPanel1.add(btnf6c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 371, 49, 67));
 
         btnf5c3.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf5c3.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf5c3.addActionListener(this::btnf5c3ActionPerformed);
+        jPanel1.add(btnf5c3, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 298, 49, 67));
 
         btnf8c5.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf8c5.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf8c5.addActionListener(this::btnf8c5ActionPerformed);
+        jPanel1.add(btnf8c5, new org.netbeans.lib.awtextra.AbsoluteConstraints(255, 517, 49, 67));
 
         btnf8c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf8c1.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf8c1.addActionListener(this::btnf8c1ActionPerformed);
+        jPanel1.add(btnf8c1, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 517, 49, 67));
 
         btnf6c7.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf6c7.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf6c7.addActionListener(this::btnf6c7ActionPerformed);
+        jPanel1.add(btnf6c7, new org.netbeans.lib.awtextra.AbsoluteConstraints(365, 371, 49, 67));
 
         btnf8c3.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf8c3.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf8c3.addActionListener(this::btnf8c3ActionPerformed);
+        jPanel1.add(btnf8c3, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 517, 49, 67));
 
         btnf6c2.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf6c2.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf6c2.addActionListener(this::btnf6c2ActionPerformed);
+        jPanel1.add(btnf6c2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 371, 49, 67));
 
         btnf8c6.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf8c6.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf8c6.addActionListener(this::btnf8c6ActionPerformed);
+        jPanel1.add(btnf8c6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 517, 49, 67));
 
         btnf6c8.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf6c8.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf6c8.addActionListener(this::btnf6c8ActionPerformed);
+        jPanel1.add(btnf6c8, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 371, 49, 67));
 
         btnf7c6.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf7c6.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf7c6.addActionListener(this::btnf7c6ActionPerformed);
+        jPanel1.add(btnf7c6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 444, 49, 67));
 
         btnf6c5.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf6c5.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf6c5.addActionListener(this::btnf6c5ActionPerformed);
+        jPanel1.add(btnf6c5, new org.netbeans.lib.awtextra.AbsoluteConstraints(255, 371, 49, 67));
 
         btnf6c1.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf6c1.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf6c1.addActionListener(this::btnf6c1ActionPerformed);
+        jPanel1.add(btnf6c1, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 371, 49, 67));
 
         btnf6c3.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf6c3.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf6c3.addActionListener(this::btnf6c3ActionPerformed);
+        jPanel1.add(btnf6c3, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 371, 49, 67));
 
         btnf6c6.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf6c6.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf6c6.addActionListener(this::btnf6c6ActionPerformed);
+        jPanel1.add(btnf6c6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 371, 49, 67));
 
         btnf7c4.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf7c4.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf7c4.addActionListener(this::btnf7c4ActionPerformed);
+        jPanel1.add(btnf7c4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 444, 49, 67));
 
         btnf7c7.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf7c7.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf7c7.addActionListener(this::btnf7c7ActionPerformed);
+        jPanel1.add(btnf7c7, new org.netbeans.lib.awtextra.AbsoluteConstraints(365, 444, 49, 67));
 
         btnf5c6.setMaximumSize(new java.awt.Dimension(63, 5));
         btnf5c6.setMinimumSize(new java.awt.Dimension(63, 5));
         btnf5c6.addActionListener(this::btnf5c6ActionPerformed);
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(35, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnf1c1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c4, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c5, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c6, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c7, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf1c8, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnf2c1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf2c2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf2c3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf2c4, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf2c5, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf2c6, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf2c7, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf2c8, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnf3c1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf3c2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf3c3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf3c4, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf3c5, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf3c6, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf3c7, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf3c8, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnf4c1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf4c2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf4c3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf4c4, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf4c5, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf4c6, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf4c7, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf4c8, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnf5c1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf5c2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf5c3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf5c4, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf5c5, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf5c6, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf5c7, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf5c8, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnf6c1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf6c2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf6c3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf6c4, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf6c5, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf6c6, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf6c7, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf6c8, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnf7c1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf7c2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf7c3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf7c4, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf7c5, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf7c6, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf7c7, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf7c8, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnf8c1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf8c2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf8c3, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf8c4, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf8c5, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf8c6, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf8c7, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnf8c8, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(29, 29, 29))
-        );
-
-        jPanel1Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnf1c1, btnf1c2, btnf1c3, btnf1c4, btnf1c5, btnf1c6, btnf1c7, btnf1c8, btnf2c1, btnf2c2, btnf2c3, btnf2c4, btnf2c5, btnf2c6, btnf2c7, btnf2c8, btnf3c1, btnf3c2, btnf3c3, btnf3c4, btnf3c5, btnf3c6, btnf3c7, btnf3c8, btnf4c1, btnf4c2, btnf4c3, btnf4c4, btnf4c5, btnf4c6, btnf4c7, btnf4c8, btnf5c1, btnf5c2, btnf5c3, btnf5c4, btnf5c5, btnf5c6, btnf5c7, btnf5c8, btnf6c1, btnf6c2, btnf6c3, btnf6c4, btnf6c5, btnf6c6, btnf6c7, btnf6c8, btnf7c1, btnf7c2, btnf7c3, btnf7c4, btnf7c5, btnf7c6, btnf7c7, btnf7c8, btnf8c1, btnf8c2, btnf8c3, btnf8c4, btnf8c5, btnf8c6, btnf8c7, btnf8c8});
-
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(btnf1c1, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c3, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c5, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c8, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf1c7, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE))
-                    .addComponent(btnf1c2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(btnf2c1, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf2c3, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf2c4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf2c5, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf2c6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf2c8, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf2c7, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE))
-                    .addComponent(btnf2c2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(btnf3c1, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf3c3, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf3c4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf3c5, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf3c6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf3c8, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf3c7, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE))
-                    .addComponent(btnf3c2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(btnf4c1, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf4c3, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf4c4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf4c5, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf4c6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf4c8, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf4c7, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE))
-                    .addComponent(btnf4c2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(btnf5c1, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf5c3, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf5c4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf5c5, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf5c6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf5c8, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf5c7, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(btnf5c2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(btnf6c1, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf6c3, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf6c4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf6c5, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf6c6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf6c8, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf6c7, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(btnf6c2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(btnf7c1, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf7c3, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf7c4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf7c5, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf7c6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf7c8, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf7c7, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(btnf7c2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(btnf8c1, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf8c3, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf8c4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf8c5, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf8c6, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE)
-                        .addComponent(btnf8c7, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btnf8c8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(btnf8c2, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jPanel1Layout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {btnf1c1, btnf1c2, btnf1c3, btnf1c4, btnf1c5, btnf1c6, btnf1c7, btnf1c8, btnf2c1, btnf2c2, btnf2c3, btnf2c4, btnf2c5, btnf2c6, btnf2c7, btnf2c8, btnf3c1, btnf3c2, btnf3c3, btnf3c4, btnf3c5, btnf3c6, btnf3c7, btnf3c8, btnf4c1, btnf4c2, btnf4c3, btnf4c4, btnf4c5, btnf4c6, btnf4c7, btnf4c8, btnf5c1, btnf5c2, btnf5c3, btnf5c4, btnf5c5, btnf5c6, btnf5c7, btnf5c8, btnf6c1, btnf6c2, btnf6c3, btnf6c4, btnf6c5, btnf6c6, btnf6c7, btnf6c8, btnf7c1, btnf7c2, btnf7c3, btnf7c4, btnf7c5, btnf7c6, btnf7c7, btnf7c8, btnf8c1, btnf8c2, btnf8c3, btnf8c4, btnf8c5, btnf8c6, btnf8c7, btnf8c8});
+        jPanel1.add(btnf5c6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 298, 49, 67));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
