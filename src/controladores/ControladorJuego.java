@@ -32,6 +32,7 @@ public class ControladorJuego {
         juego.seleccionarCarta(fila, columna);
         frmjuego.actualizarInfo();
         if(juego.getTablero().juegoFinalizado()){
+            cronometro.detener();
             frmJuego.finalizarJuego(juego.getJugador());
         }
     }
