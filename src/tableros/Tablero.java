@@ -20,7 +20,7 @@ public class Tablero {
                 columnas = 4;
                 break;
             case INTERMEDIO: 
-                filas = 8;
+                filas = 4;
                 columnas = 8;
                 break;    
             case AVANZADO: 
@@ -29,6 +29,7 @@ public class Tablero {
                 break;    
         }
         tablero = new Carta[filas][columnas];
+        distribuirParejas();
        
     }
     

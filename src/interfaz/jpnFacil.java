@@ -14,12 +14,14 @@ import juegos.Juego;
  */
 public class jpnFacil extends javax.swing.JPanel {
      private Juego juego;
-     private Carta [][] carta;
      JButton[] botones = new JButton [16];
     /**
      * Creates new form jpnFacil
      */
-    
+    private final String[] emojis = {
+    "😀", "😎", "🤖", "👻",
+    "🐶", "🐱", "🍕", "⚽"
+};
     public jpnFacil(Juego juego) {
         initComponents();
         this.juego = juego;
@@ -49,11 +51,15 @@ public class jpnFacil extends javax.swing.JPanel {
                 int indice = i* 4 +j;
                 Carta carta = cartas[i][j];
                 if (carta.isEstado() || carta.isEmparejada()){
-                    botones[indice].setText(String.valueOf(carta.getNombre()));
-                }else 
-                    botones[indice].setText("A");
+                    
+                    botones[indice].setText(emojis[carta.getNombre()-1]);
+                    
+                }else{
+                    botones[indice].setText("?");
+                }
+                botones[indice].setEnabled(!carta.isEmparejada());
             }
-            
+                
         }
     }
 
@@ -209,10 +215,12 @@ public class jpnFacil extends javax.swing.JPanel {
 
     private void btnf2c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c3ActionPerformed
         juego.seleccionarCarta(1,2);
+        actualizarTablero();
     }//GEN-LAST:event_btnf2c3ActionPerformed
 
     private void btnf1c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c3ActionPerformed
         juego.seleccionarCarta(0,2);
+        actualizarTablero();
     }//GEN-LAST:event_btnf1c3ActionPerformed
 
     private void btnf1c8Abtnf1c1rformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c8ActionPerformed
@@ -221,50 +229,62 @@ public class jpnFacil extends javax.swing.JPanel {
 
     private void btnf2c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c2ActionPerformed
          juego.seleccionarCarta(1,1);
+         actualizarTablero();
     }//GEN-LAST:event_btnf2c2ActionPerformed
 
     private void btnf4c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c1ActionPerformed
          juego.seleccionarCarta(3,0);
+         actualizarTablero();
     }//GEN-LAST:event_btnf4c1ActionPerformed
 
     private void btnf3c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c1ActionPerformed
         juego.seleccionarCarta(2,0);
+        actualizarTablero();
     }//GEN-LAST:event_btnf3c1ActionPerformed
 
     private void btnf4c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c3ActionPerformed
         juego.seleccionarCarta(3,2);
+        actualizarTablero();
     }//GEN-LAST:event_btnf4c3ActionPerformed
 
     private void btnf3c3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c3ActionPerformed
          juego.seleccionarCarta(2,2);
+         actualizarTablero();
     }//GEN-LAST:event_btnf3c3ActionPerformed
 
     private void btnf3c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c2ActionPerformed
          juego.seleccionarCarta(2,1);
+         actualizarTablero();
     }//GEN-LAST:event_btnf3c2ActionPerformed
 
     private void btnf4c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c2ActionPerformed
         juego.seleccionarCarta(3,1);
+        actualizarTablero();
     }//GEN-LAST:event_btnf4c2ActionPerformed
 
     private void btnf2c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf2c4ActionPerformed
          juego.seleccionarCarta(1,3);
+         actualizarTablero();
     }//GEN-LAST:event_btnf2c4ActionPerformed
 
     private void btnf1c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c4ActionPerformed
-         juego.seleccionarCarta(0,4);
+         juego.seleccionarCarta(0,3);
+         actualizarTablero();
     }//GEN-LAST:event_btnf1c4ActionPerformed
 
     private void btnf4c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf4c4ActionPerformed
         juego.seleccionarCarta(3,3);
+        actualizarTablero();
     }//GEN-LAST:event_btnf4c4ActionPerformed
 
     private void btnf3c4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf3c4ActionPerformed
          juego.seleccionarCarta(2,3);
+         actualizarTablero();
     }//GEN-LAST:event_btnf3c4ActionPerformed
 
     private void btnf1c2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnf1c2ActionPerformed
          juego.seleccionarCarta(0,1);
+         actualizarTablero();
     }//GEN-LAST:event_btnf1c2ActionPerformed
 
 
